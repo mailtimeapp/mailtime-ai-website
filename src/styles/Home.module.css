@@ -1,0 +1,15 @@
+.page {
+  background-image: url(/static/img/background-mobile.jpg);
+  background-size: 164vw;
+  background-position: left 60% top -2.6rem;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  .page {
+    background-size: 153vw;
+    background-position: left 51% top 0;
+    background-repeat: no-repeat;
+    background-image: url(/static/img/background.jpg);
+  }
+}

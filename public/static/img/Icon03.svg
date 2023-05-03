@@ -1,0 +1,22 @@
+<svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.02" cx="65" cy="65" r="65" fill="#00FEFE"/>
+<circle cx="95.5" cy="95.5" r="34.5" fill="url(#paint0_radial_753_4438)"/>
+<path d="M73.58 56.9801C73.58 43.9201 67 33.3301 49.79 33.3301C36.73 33.3301 29 40.9301 29 53.9901C29 59.3901 30.5 64.0501 33.86 68.3501C37.22 72.6501 38.51 71.1701 37.65 77.1801C36.79 83.1901 36.79 85.9501 36.79 85.9501" stroke="#0000FF" stroke-width="4.34" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M73.5806 56.9805L78.3406 65.0605C78.5206 65.3705 78.4306 65.7605 78.1306 65.9505L73.3006 69.1105V74.9305C73.3006 78.9705 69.6806 82.0405 65.6906 81.3905L56.0706 79.8105L54.3906 91.3405" stroke="#0000FF" stroke-width="4.34" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M83.4805 72.9199C84.1305 74.0199 84.5805 76.5799 84.5805 79.5699C84.5805 82.5599 84.1305 85.1199 83.4805 86.2199" stroke="#0000FF" stroke-width="4.34" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M90.4199 68.0703C91.7099 69.9603 92.6199 74.4003 92.6199 79.5703C92.6199 84.7403 91.7099 89.1703 90.4199 91.0703" stroke="#0000FF" stroke-width="4.34" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M99.1504 64.1602C100.44 66.7002 101.35 72.6402 101.35 79.5702C101.35 86.5002 100.44 92.4402 99.1504 94.9802" stroke="#0000FF" stroke-width="4.34" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M49.7708 67.2803V54.4003H45.0508L54.4808 41.5303V54.4003H59.1908L49.7708 67.2803Z" stroke="#0000FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M97.4395 44.8398V53.5098" stroke="#0000FF" stroke-width="3.35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M101.77 49.1797H93.0996" stroke="#0000FF" stroke-width="3.35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M80.041 29V37.66" stroke="#0000FF" stroke-width="3.35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M84.3709 33.3301H75.7109" stroke="#0000FF" stroke-width="3.35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M69.1191 92.0801V100.74" stroke="#0000FF" stroke-width="3.35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M73.4491 96.4102H64.7891" stroke="#0000FF" stroke-width="3.35" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<radialGradient id="paint0_radial_753_4438" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(95.5 95.5) rotate(90) scale(34.5)">
+<stop offset="0.512152" stop-color="#00FFFF" stop-opacity="0.1"/>
+<stop offset="0.829861" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

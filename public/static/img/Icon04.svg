@@ -1,0 +1,29 @@
+<svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.02" cx="65" cy="65" r="65" fill="#00FEFE"/>
+<circle cx="95.5" cy="95.5" r="34.5" fill="url(#paint0_radial_753_4459)"/>
+<path d="M64.0501 57.8696L68.8601 53.0596L61.2501 45.4396L98.1101 38.8496L91.5201 75.7096L83.9001 68.0896L66.3701 85.6196L51.3301 70.5896L56.8401 65.0796" stroke="#0000FF" stroke-width="2.91" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M43.0901 71.2695L35.8301 78.5295" stroke="#0000FF" stroke-width="2.91" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.03 80.46L31 94.5" stroke="#0000FF" stroke-width="2.91" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.4304 91.5195L31.4004 105.56" stroke="#0000FF" stroke-width="2.91" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M65.6797 93.8594L58.4297 101.119" stroke="#0000FF" stroke-width="2.91" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M56.4909 91.9297L42.4609 105.96" stroke="#0000FF" stroke-width="2.91" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M64.0501 57.8696L68.8601 53.0596L61.2501 45.4396L98.1101 38.8496L91.5201 75.7096L83.9001 68.0896L66.3701 85.6196L51.3301 70.5896L56.8401 65.0796" stroke="#0000FF" stroke-width="4.34" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M43.0901 71.2695L35.8301 78.5295" stroke="#0000FF" stroke-width="4.34" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.03 80.46L31 94.5" stroke="#0000FF" stroke-width="4.34" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.4304 91.5195L31.4004 105.56" stroke="#0000FF" stroke-width="4.34" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M65.6797 93.8594L58.4297 101.119" stroke="#0000FF" stroke-width="4.34" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M56.4909 91.9297L42.4609 105.96" stroke="#0000FF" stroke-width="4.34" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M60.3598 62.9091C61.1993 62.9091 61.8798 62.2286 61.8798 61.3891C61.8798 60.5497 61.1993 59.8691 60.3598 59.8691C59.5204 59.8691 58.8398 60.5497 58.8398 61.3891C58.8398 62.2286 59.5204 62.9091 60.3598 62.9091Z" fill="#0000FF"/>
+<path d="M71.8301 24V32.67" stroke="#0000FF" stroke-width="3.35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M76.17 28.3301H67.5" stroke="#0000FF" stroke-width="3.35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.1191 48.7803V57.4503" stroke="#0000FF" stroke-width="3.35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.4591 53.1201H36.7891" stroke="#0000FF" stroke-width="3.35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M83.75 97.3496V106.02" stroke="#0000FF" stroke-width="3.35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M88.0802 101.68H79.4102" stroke="#0000FF" stroke-width="3.35" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<radialGradient id="paint0_radial_753_4459" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(95.5 95.5) rotate(90) scale(34.5)">
+<stop offset="0.512152" stop-color="#00FFFF" stop-opacity="0.1"/>
+<stop offset="0.829861" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

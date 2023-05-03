@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import MailchimpSubscribe, { EmailFormFields } from "react-mailchimp-subscribe";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
 import JoinWhitelistButton from "./JoinWhitelistButton";
 import { LeapFrog } from "@uiball/loaders";
 
@@ -46,23 +46,29 @@ const CustomForm = ({ status, message, onValidated }) => {
       id="join-whitelist"
       className="w-full mx-auto flex flex-col justify-center px-[3.5rem] lg:px-0 items-center mt-[4.8rem] mb-48 lg:mb-72"
     >
-      {status === "sending" && (
-        <div className="mb-[0.8rem] lg:mb-0 lg:mr-[2.4rem]">
-          <LeapFrog size={40} speed={2} color="#0000ff" />
-        </div>
-      )}
+      <div
+        className={`flex flex-row ${
+          status === "sending" || status === "success"
+            ? "items-center"
+            : "items-start"
+        }`}
+      >
+        {status === "sending" && (
+          <div className="mb-[0.8rem] lg:mb-0 lg:mr-[2.4rem]">
+            <LeapFrog size={40} speed={2} color="#0000ff" />
+          </div>
+        )}
 
-      {status === "success" && (
-        <div
-          className="font-sans lg:font-inter font-bold text-[1.8rem] lg:text-[2.4rem] leading-[2.3rem] lg:leading-[2.9rem] text-ai-blue mb-[0.8rem] lg:mb-0 lg:mr-[2.4rem]"
-          dangerouslySetInnerHTML={{
-            __html: message?.toString() || "Thank you for signing up.",
-          }}
-        />
-      )}
-
-      <div className="flex flex-row">
-        <div className="flex flex-col items-center ">
+        {status === "success" && (
+          <div className="font-sans lg:font-inter font-bold text-[1.8rem] lg:text-[2.4rem] leading-[2.3rem] lg:leading-[2.9rem] text-ai-blue mb-[0.8rem] lg:mb-0 lg:mr-[2.4rem] flex items-center grow">
+            <p
+              dangerouslySetInnerHTML={{
+                __html: message?.toString() || "Thank you for signing up.",
+              }}
+            ></p>
+          </div>
+        )}
+        <div className="flex flex-col">
           {(status === null || status === "error") && (
             <div className="mb-[0.8rem] lg:mb-0 lg:mr-[2.4rem]">
               <input
@@ -93,7 +99,7 @@ const CustomForm = ({ status, message, onValidated }) => {
           isEnabled={isValid && status !== "success"}
         />
       </div>
-
+      {/* TODO: Add a deep link */}
       <a
         href="#!"
         className="font-inter font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] text-ai-blue hover:text-ai-blue underline mt-[1.6rem]"

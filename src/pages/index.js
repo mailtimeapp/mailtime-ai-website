@@ -38,7 +38,7 @@ const Home = () => {
         <title>MailTime AI - The Email Messenger</title>
         <meta
           name="keywords"
-          content="MailTime,简信,MailTimeApp,MailTimeApp,Gmail,YahooMail,myMail,MailBox"
+          content="MailTime,简信,MailTimeApp,MailTimeApp,Gmail,YahooMail,myMail,MailBox,MailTimeAI"
         />
         <meta
           name="description"

@@ -7,6 +7,7 @@ import styles from "../styles/Home.module.css";
 import InAppSignupForm from "../components/InAppSignupForm";
 import MailchimpSignupForm from "../components/MailchimpSignupForm";
 import Link from "next/link";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 
 const Home = () => {
   const [email, setEmail] = useState("");
@@ -27,6 +28,9 @@ const Home = () => {
       setRegisteredInQuery(false);
     }
   }, [router.query]);
+
+  const { width } = useWindowDimensions();
+  const isDesktop = !!width && width > 1023;
 
   return (
     <>
@@ -59,7 +63,11 @@ const Home = () => {
         <nav>
           <div className="w-full lg:w-[70%] 2xl:w-[100rem] mx-auto px-[2.5rem] lg:px-0 pt-[2rem] pb-[1.3rem] lg:py-[3.6rem]">
             <div className="w-[17rem] h-[3rem] lg:w-[22.8rem] lg:h-[4rem]">
-              <a href="https://mailtime.com/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://mailtime.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   src="/static/img/Logo_Blue.svg"
                   alt="MailTime Logo"
@@ -171,8 +179,25 @@ const Home = () => {
             <article className="font-inter text-ai-blue text-justify">
               <p className="font-medium text-[1.4rem] lg:text-[2.1rem] my-[1.4rem] lg:my-[1.8rem] leading-[1.8rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
                 Experience the disruptive email messaging experience powered by
-                ChatGPT, brought to you by Measurable Data Token (MDT).
+                ChatGPT, brought to you by{" "}
+                <a
+                  href="https://mdt.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-4 whitespace-nowrap"
+                >
+                  <Image
+                    src="/static/img/mdt-icon.svg"
+                    alt="The icon of Measurable Data Token(MDT)"
+                    width={isDesktop ? 21 : 14}
+                    height={isDesktop ? 21 : 14}
+                    className="inline align-sub"
+                  />{" "}
+                  Measurable Data Token (MDT)
+                </a>
+                .
               </p>
+
               <p className="font-medium text-[1.4rem] lg:text-[2.1rem] my-[1.4rem] lg:my-[1.8rem] leading-[1.8rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
                 Manage your emails like never before. By providing relevant and
                 accurate suggestions, you can automatically draft email replies

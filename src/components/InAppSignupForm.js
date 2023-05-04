@@ -27,7 +27,9 @@ export default function InAppSignupForm({ email, registered }) {
   return (
     <section
       id="join-whitelist"
-      className="w-full mx-auto flex flex-col lg:flex-row justify-center px-[3.5rem] lg:px-0 items-center mt-[4.8rem] mb-48 lg:mb-72"
+      className={`w-full mx-auto flex flex-col lg:flex-row justify-center px-[3.5rem] lg:px-0 items-center ${
+        registered ? "my-[2rem]" : "mt-[4.8rem] mb-48 lg:mb-72"
+      }`}
     >
       <div className="flex flex-col items-center">
         {((status === "notSubmited" && !registered) || status === "error") && (
@@ -84,7 +86,7 @@ export default function InAppSignupForm({ email, registered }) {
       )}
 
       {registered && (
-        <div className="font-inter text-[1.4rem] lg:text-[1.8rem] font-medium lg:font-normal leading-[2.6rem] text-ai-blue bg-white border-ai-blue border-2 p-[2.4rem] rounded-2xl">
+        <div className="font-inter text-[1.4rem] lg:text-[1.8rem] font-medium lg:font-normal leading-[2.6rem] text-ai-blue bg-white border-ai-blue border-2 p-[1.2rem] text-center rounded-2xl">
           You have signed up the whitelist for {email}
         </div>
       )}

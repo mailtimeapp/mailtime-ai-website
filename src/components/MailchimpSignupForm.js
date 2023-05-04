@@ -66,7 +66,7 @@ const CustomForm = ({ status, message, onValidated }) => {
                 dangerouslySetInnerHTML={{
                   __html:
                     message?.toString() ||
-                    "Something went wrong. Please try again later.",
+                    "Ops! We’ve run into some issues, please contact <a href='mailto:support@mailtime.com'>support@mailtime.com</a>.",
                 }}
               />
             )}
@@ -83,9 +83,7 @@ const CustomForm = ({ status, message, onValidated }) => {
           <div className="font-sans lg:font-inter font-bold text-[1.8rem] lg:text-[2.4rem] leading-[2.3rem] lg:leading-[2.9rem] text-ai-blue flex items-center grow">
             <p
               dangerouslySetInnerHTML={{
-                __html:
-                  message?.toString() ||
-                  "Thank you for signing up. Thank you for signing up. Thank you for signing up. Thank you for signing up. Thank you for signing up. Thank you for signing up. Thank you for signing up. Thank you for signing up. Thank you for signing up. Thank you for signing up.",
+                __html: message?.toString() || "Thank you for signing up.",
               }}
             ></p>
           </div>
@@ -100,7 +98,9 @@ const CustomForm = ({ status, message, onValidated }) => {
           {/* TODO: Add a deep link */}
           {status !== "success" && (
             <a
-              href="#!"
+              href="https://mailtime.onelink.me/FaGN/duriinau"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-inter font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] text-ai-blue hover:text-ai-blue underline mt-[1.6rem]"
             >
               Already a MailTime user

@@ -66,7 +66,7 @@ const CustomForm = ({ status, message, onValidated }) => {
                 dangerouslySetInnerHTML={{
                   __html:
                     message?.toString() ||
-                    "Something went wrong. Please try again later.",
+                    "Ops! We’ve run into some issues, please contact <a href='mailto:support@mailtime.com'>support@mailtime.com</a>.",
                 }}
               />
             )}
@@ -83,9 +83,7 @@ const CustomForm = ({ status, message, onValidated }) => {
           <div className="font-sans lg:font-inter font-bold text-[1.8rem] lg:text-[2.4rem] leading-[2.3rem] lg:leading-[2.9rem] text-ai-blue flex items-center grow">
             <p
               dangerouslySetInnerHTML={{
-                __html:
-                  message?.toString() ||
-                  "Thank you for signing up. Thank you for signing up. Thank you for signing up. Thank you for signing up. Thank you for signing up. Thank you for signing up. Thank you for signing up. Thank you for signing up. Thank you for signing up. Thank you for signing up.",
+                __html: message?.toString() || "Thank you for signing up.",
               }}
             ></p>
           </div>

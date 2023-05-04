@@ -4,12 +4,13 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth !important;
 }
 
 html {
   font-size: 62.5%; /* set the root font-size be 10px */
   min-height: 100vh;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 body {

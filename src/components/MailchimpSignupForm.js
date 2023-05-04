@@ -44,13 +44,13 @@ const CustomForm = ({ status, message, onValidated }) => {
   return (
     <section
       id="join-whitelist"
-      className="w-full mx-auto flex flex-col justify-center px-[3.5rem] lg:px-0 items-center mt-[4.8rem] mb-48 lg:mb-72"
+      className="w-full lg:w-10/12 mx-auto flex flex-col justify-center px-[3.5rem] lg:px-0 items-center mt-[4.8rem] mb-48 lg:mb-72"
     >
       <div
-        className={`flex flex-row ${
+        className={`lg:w-full flex flex-col lg:flex-row ${
           status === "sending" || status === "success"
             ? "items-center"
-            : "items-start"
+            : "items-center lg:items-start"
         }`}
       >
         {status === "sending" && (
@@ -68,9 +68,9 @@ const CustomForm = ({ status, message, onValidated }) => {
             ></p>
           </div>
         )}
-        <div className="flex flex-col">
+        <div className="w-full flex flex-col">
           {(status === null || status === "error") && (
-            <div className="mb-[0.8rem] lg:mb-0 lg:mr-[2.4rem]">
+            <div className="grow mb-[0.8rem] lg:mb-0 lg:mr-[2.4rem]">
               <input
                 aria-label="Your email"
                 ref={(node) => (emailInputElement = node)}
@@ -78,13 +78,13 @@ const CustomForm = ({ status, message, onValidated }) => {
                 placeholder="Your email"
                 value={email}
                 onChange={handleEmailChange}
-                className="w-full lg:min-w-[40rem] border border-ai-blue p-[1.6rem] rounded-[1.2rem] text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] font-medium text-ai-blue placeholder:text-[1.4rem] lg:placeholder:text-[2.1rem] placeholder:leading-[1.8rem] lg:placeholder:leading-[2.8rem] placeholder:font-medium placeholder:text-ai-blue focus:outline-ai-blue invalid:border-ai-red invalid:text-ai-red invalid:focus:outline-ai-red"
+                className="w-full lg:min-w-[40rem] border border-ai-blue px-[1.2rem] py-[0.6rem] lg:p-[1.6rem] rounded-[1.2rem] text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] font-medium text-ai-blue placeholder:text-[1.4rem] lg:placeholder:text-[2.1rem] placeholder:leading-[1.8rem] lg:placeholder:leading-[2.8rem] placeholder:font-medium placeholder:text-ai-blue focus:outline-ai-blue invalid:border-ai-red invalid:text-ai-red invalid:focus:outline-ai-red"
               />
             </div>
           )}
           {status === "error" && (
             <div
-              className="text-ai-red text-[1.6rem] mt-2"
+              className="text-ai-red text-[1.4rem] lg:text-[1.6rem] mb-4 lg:mb-0"
               dangerouslySetInnerHTML={{
                 __html:
                   message?.toString() ||
@@ -94,18 +94,21 @@ const CustomForm = ({ status, message, onValidated }) => {
           )}
         </div>
 
-        <JoinWhitelistButton
-          onClick={submit}
-          isEnabled={isValid && status !== "success"}
-        />
+        <div className="flex flex-col items-center">
+          <JoinWhitelistButton
+            onClick={submit}
+            isEnabled={isValid && status !== "success"}
+            className="grow-0 shrink-0"
+          />
+          {/* TODO: Add a deep link */}
+          <a
+            href="#!"
+            className="font-inter font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] text-ai-blue hover:text-ai-blue underline mt-[1.6rem]"
+          >
+            Already a MailTime user
+          </a>
+        </div>
       </div>
-      {/* TODO: Add a deep link */}
-      <a
-        href="#!"
-        className="font-inter font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] text-ai-blue hover:text-ai-blue underline mt-[1.6rem]"
-      >
-        Already a MailTime user
-      </a>
     </section>
   );
 };

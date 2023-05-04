@@ -8,7 +8,6 @@ import InAppSignupForm from "../components/InAppSignupForm";
 import MailchimpSignupForm from "../components/MailchimpSignupForm";
 import Link from "next/link";
 import useWindowDimensions from "../hooks/useWindowDimensions";
-import Script from 'next/script';
 
 const Home = () => {
   const [email, setEmail] = useState("");
@@ -35,18 +34,6 @@ const Home = () => {
 
   return (
     <>
-      <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-7LV2F1R9TJ`} />
-
-      <Script id="ga" strategy="lazyOnload">
-          {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-7LV2F1R9TJ', {
-              page_path: window.location.pathname,
-              });
-          `}
-      </Script>
       <Head>
         <title>MailTime AI - The Email Messenger</title>
         <meta

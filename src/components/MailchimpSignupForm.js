@@ -100,7 +100,9 @@ const CustomForm = ({ status, message, onValidated }) => {
           {/* TODO: Add a deep link */}
           {status !== "success" && (
             <a
-              href="#!"
+              href="https://mailtime.onelink.me/FaGN/duriinau"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-inter font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] text-ai-blue hover:text-ai-blue underline mt-[1.6rem]"
             >
               Already a MailTime user

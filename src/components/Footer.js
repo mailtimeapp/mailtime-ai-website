@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Accordion from "./Accordion";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 
 const Footer = () => {
+  const { width } = useWindowDimensions();
+  const isDesktop = width && width > 1023;
+
   const accordionItems = [
     {
       question: "About",
@@ -152,11 +156,13 @@ const Footer = () => {
                       align-top justify-between"
       >
         <div className="lg:col-span-3 col-span-1">
-          <div className="lg:h-[3.6rem] h-[2.5rem] w-full">
-            <img
+          <div className="lg:h-[3.6rem] h-[2.5rem] w-full relative">
+            <Image
               src="/static/img/mailtime_logo_full.svg"
-              alt="mailtime logo"
+              alt="The logo of MailTime"
               className="h-[100%] w-[auto]"
+              width={isDesktop ? 205 : 142}
+              height={isDesktop ? 36 : 25}
             />
           </div>
           <div className="mt-8 w-full">

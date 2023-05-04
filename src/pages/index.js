@@ -59,16 +59,15 @@ const Home = () => {
         <nav>
           <div className="w-full lg:w-[70%] 2xl:w-[100rem] mx-auto px-[2.5rem] lg:px-0 pt-[2rem] pb-[1.3rem] lg:py-[3.6rem]">
             <div className="w-[17rem] h-[3rem] lg:w-[22.8rem] lg:h-[4rem]">
-              <Link href="/" passHref>
+              <a href="https://mailtime.com/" target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/static/img/Logo_Blue.svg"
                   alt="MailTime Logo"
                   width={228}
                   height={40}
-                  layout="responsive"
                   className="cursor-pointer"
                 />
-              </Link>
+              </a>
             </div>
           </div>
         </nav>
@@ -81,7 +80,6 @@ const Home = () => {
                   alt="Early access starts... NOW. Priority Access to MailTime AI powered by ChatGPT"
                   width={870}
                   height={320}
-                  layout="responsive"
                 />
               </div>
               <div className="mb-[11.3rem] block lg:hidden">
@@ -90,7 +88,6 @@ const Home = () => {
                   alt="Early access starts... NOW. Priority Access to MailTime AI powered by ChatGPT"
                   width={306}
                   height={199}
-                  layout="responsive"
                 />
               </div>
               <Link href="#join-whitelist" passHref>
@@ -184,7 +181,7 @@ const Home = () => {
               <p className="font-medium text-[1.4rem] lg:text-[2.1rem] my-[1.4rem] lg:my-[1.8rem] leading-[1.8rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
                 MailTime AI whitelist is free for a limited time, so don&apos;t
                 miss out on this opportunity to get early access to our
-                ChatGPT-powered email reply drafts (before it&apos;s full!). 
+                ChatGPT-powered email reply drafts (before it&apos;s full!).
               </p>
               <p className="font-medium text-[1.4rem] lg:text-[2.1rem] my-[1.4rem] lg:my-[1.8rem] leading-[1.8rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
                 During priority access phase, each user will be airdropped a
@@ -208,7 +205,7 @@ const Home = () => {
               The MailTime AI whitelist is available exclusively for MailTime
               users. As a MailTime user, you can sign up for the whitelist to
               Simply open the app and click “Activate MailTime AI” on the menu
-              to get exclusive early access to this new feature. 
+              to get exclusive early access to this new feature.
             </p>
             <p className="font-inter font-normal lg:font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] tracking-normal lg:tracking-[0.02em] text-ai-blue text-center my-[4.4rem]">
               We&apos;ll be in touch with more information soon, stay tuned!

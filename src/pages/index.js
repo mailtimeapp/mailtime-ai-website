@@ -74,6 +74,7 @@ const Home = () => {
                   width={228}
                   height={40}
                   className="cursor-pointer"
+                  priority
                 />
               </a>
             </div>

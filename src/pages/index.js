@@ -104,7 +104,7 @@ const Home = () => {
             </div>
           </section>
           <section className="flex flex-col lg:flex-row lg:items-center">
-            <div className="w-10/12 lg:w-6/12 aspect-[24/45] mx-auto lg:mx-[3.1rem] relative">
+            <div className="w-8/12 lg:w-6/12 aspect-[24/45] mx-auto lg:mx-[3.1rem] relative">
               <Image
                 src="/static/img/mailtimeai-mockup.png"
                 fill
@@ -166,7 +166,7 @@ const Home = () => {
               </div>
             </div>
           </section>
-          <section className="my-[3.6rem] lg:my-[4.8rem] px-[3.1rem] lg:px-0">
+          <section className="w-full lg:w-10/12 mx-auto my-[3.6rem] lg:my-[4.8rem] px-[3.1rem] lg:px-0">
             <article className="font-inter text-ai-blue text-justify">
               <p className="font-medium text-[1.4rem] lg:text-[2.1rem] my-[1.4rem] lg:my-[1.8rem] leading-[1.8rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
                 Experience the disruptive email messaging experience powered by
@@ -175,16 +175,19 @@ const Home = () => {
                   href="https://mdt.io/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline underline-offset-4 whitespace-nowrap"
+                  className="underline underline-offset-4"
                 >
-                  <Image
-                    src="/static/img/mdt-icon.svg"
-                    alt="The icon of Measurable Data Token(MDT)"
-                    width={isDesktop ? 21 : 14}
-                    height={isDesktop ? 21 : 14}
-                    className="inline align-sub"
-                  />{" "}
-                  Measurable Data Token (MDT)
+                  <span className="whitespace-nowrap">
+                    <Image
+                      src="/static/img/mdt-icon.svg"
+                      alt="The icon of Measurable Data Token(MDT)"
+                      width={isDesktop ? 21 : 14}
+                      height={isDesktop ? 21 : 14}
+                      className="inline align-sub"
+                    />{" "}
+                    Measurable
+                  </span>{" "}
+                  Data Token (MDT)
                 </a>
                 .
               </p>
@@ -213,7 +216,7 @@ const Home = () => {
           )}
           {!emailInQuery && <MailchimpSignupForm />}
 
-          <section className="px-[3.5rem] lg:px-0">
+          <section className="w-full lg:w-10/12 mx-auto px-[3.5rem] lg:px-0">
             <h3 className="font-sans font-bold text-[3.6rem] leading-[4.5rem] text-ai-blue my-[3.2rem] lg:my-[4.4rem]">
               How to Whitelist
             </h3>

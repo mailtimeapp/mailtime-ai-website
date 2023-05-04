@@ -61,12 +61,14 @@ const Home = () => {
           content="mtGZdEB7Wyg8LZkfMicDYpDB0zfvXYLJENsXflLyvjw"
         />
       </Head>
-      <div className={`${styles.page} "bg-no-repeat w-full mx-auto"`}>
+      <div
+        className={`${styles.page} "bg-no-repeat w-full mx-auto min-h-screen"`}
+      >
         {!registeredInQuery && <Navbar />}
         <div
           className={`w-full lg:w-[70%] 2xl:w-[100rem] mx-auto ${
             registeredInQuery
-              ? "pt-[4rem] pb-0"
+              ? "py-[4rem]"
               : "pt-[10.7rem] lg:pt-[12.2rem] pb-[17.5rem] lg:pb-[23.4rem]"
           }`}
         >
@@ -253,10 +255,7 @@ const Home = () => {
                 We&apos;ll be in touch with more information soon, stay tuned!
               </p>
               <p className="font-inter font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] tracking-normal lg:tracking-[0.02em] text-ai-blue text-center my-[2rem]">
-                If you have any inquiries, please contact{" "}
-                <a href="mailto:support@mailtime.com" className="underline">
-                  support@mailtime.com
-                </a>
+                If you have any inquiries, please contact support@mailtime.com
               </p>
             </section>
           )}

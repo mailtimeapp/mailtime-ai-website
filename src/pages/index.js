@@ -82,20 +82,20 @@ const Home = () => {
         <div className="w-full lg:w-[70%] 2xl:w-[100rem] mx-auto pt-[10.7rem] pb-[17.5rem] lg:pt-[12.2rem] lg:pb-[23.4rem]">
           <section className="mb-[4.3rem] lg:mb-32">
             <div className="mx-auto w-10/12">
-              <div className="mb-24 hidden lg:block">
+              <div className="w-full aspect-[87/32] mb-24 hidden lg:block relative">
                 <Image
                   src="/static/img/hero-title.svg"
                   alt="Early access starts... NOW. Priority Access to MailTime AI powered by ChatGPT"
-                  width={870}
-                  height={320}
+                  fill
+                  priority
                 />
               </div>
-              <div className="mb-[11.3rem] block lg:hidden">
+              <div className="w-full aspect-[306/199] mb-[11.3rem] block lg:hidden relative">
                 <Image
                   src="/static/img/hero-title-mobile.svg"
                   alt="Early access starts... NOW. Priority Access to MailTime AI powered by ChatGPT"
-                  width={306}
-                  height={199}
+                  fill
+                  priority
                 />
               </div>
               <Link href="#join-whitelist" passHref>
@@ -103,16 +103,15 @@ const Home = () => {
               </Link>
             </div>
           </section>
-          <section className="flex flex-col lg:flex-row">
-            <div className="w-5/10 block px-[3.1rem] text-center">
+          <section className="flex flex-col lg:flex-row lg:items-center">
+            <div className="w-10/12 lg:w-6/12 aspect-[24/45] mx-auto lg:mx-[3.1rem] relative">
               <Image
                 src="/static/img/mailtimeai-mockup.png"
-                width={387}
-                height={727}
+                fill
                 alt="A mockup image shows using MailTime AI in an email chat."
               ></Image>
             </div>
-            <div className="w-5/10 flex flex-col items-center mt-[1.2rem] space-y-[0.9rem] lg:mt-0 px-16">
+            <div className="w-10/12 lg:w-6/12 flex flex-col items-center mt-[1.2rem] space-y-[0.9rem] lg:mt-0 mx-auto">
               <div className="flex mx-auto">
                 <Image
                   src="/static/img/mailtimeai-logo.svg"
@@ -122,53 +121,45 @@ const Home = () => {
                 ></Image>
               </div>
               <div className="flex flex-row items-center space-x-[2.1rem] md:space-x-[1.6rem]">
-                <div className="w-2/5">
-                  <Image
-                    src="/static/img/Icon01.svg"
-                    width={130}
-                    height={130}
-                    alt="Icon of Email Drafting"
-                  ></Image>
-                </div>
+                <Image
+                  src="/static/img/Icon01.svg"
+                  width={isDesktop ? 130 : 108}
+                  height={isDesktop ? 130 : 108}
+                  alt="Icon of Email Drafting"
+                ></Image>
                 <h4 className="font-sans lg:font-inter font-bold text-[1.8rem] lg:text-[2.4rem] leading-[2.3rem] lg:leading-[2.9rem] text-ai-blue">
                   Instant AI-powered Email Drafting
                 </h4>
               </div>
               <div className="flex flex-row items-center space-x-[2.1rem] md:space-x-[1.6rem]">
-                <div className="w-2/5">
-                  <Image
-                    src="/static/img/Icon02.svg"
-                    width={130}
-                    height={130}
-                    alt="Icon of AI Assistant"
-                  ></Image>
-                </div>
+                <Image
+                  src="/static/img/Icon02.svg"
+                  width={isDesktop ? 130 : 108}
+                  height={isDesktop ? 130 : 108}
+                  alt="Icon of AI Assistant"
+                ></Image>
                 <h4 className="font-sans lg:font-inter font-bold text-[1.8rem] lg:text-[2.4rem] leading-[2.3rem] lg:leading-[2.9rem] text-ai-blue">
                   Email Protocol-based AI Assistant
                 </h4>
               </div>
               <div className="flex flex-row items-center space-x-[2.1rem] md:space-x-[1.6rem]">
-                <div className="w-2/5">
-                  <Image
-                    src="/static/img/Icon03.svg"
-                    width={130}
-                    height={130}
-                    alt="Icon of Personalized Tone and Language"
-                  ></Image>
-                </div>
+                <Image
+                  src="/static/img/Icon03.svg"
+                  width={isDesktop ? 130 : 108}
+                  height={isDesktop ? 130 : 108}
+                  alt="Icon of Personalized Tone and Language"
+                ></Image>
                 <h4 className="font-sans lg:font-inter font-bold text-[1.8rem] lg:text-[2.4rem] leading-[2.3rem] lg:leading-[2.9rem] text-ai-blue">
                   Personalized Tone and Language
                 </h4>
               </div>
               <div className="flex flex-row items-center space-x-[2.1rem] md:space-x-[1.6rem]">
-                <div className="w-2/5">
-                  <Image
-                    src="/static/img/Icon04.svg"
-                    width={130}
-                    height={130}
-                    alt="Icon of Unparalleled Speed and Efficiency"
-                  ></Image>
-                </div>
+                <Image
+                  src="/static/img/Icon04.svg"
+                  width={isDesktop ? 130 : 108}
+                  height={isDesktop ? 130 : 108}
+                  alt="Icon of Unparalleled Speed and Efficiency"
+                ></Image>
                 <h4 className="font-sans lg:font-inter font-bold text-[1.8rem] lg:text-[2.4rem] leading-[2.3rem] lg:leading-[2.9rem] text-ai-blue">
                   Unparalleled Speed and Efficiency
                 </h4>

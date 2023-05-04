@@ -221,13 +221,13 @@ const Home = () => {
             <h3 className="font-sans font-bold text-[3.6rem] leading-[4.5rem] text-ai-blue my-[3.2rem] lg:my-[4.4rem]">
               How to Whitelist
             </h3>
-            <p className="font-inter font-normal lg:font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] tracking-normal lg:tracking-[0.02em] text-ai-blue text-justify">
+            <p className="font-inter font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] tracking-normal lg:tracking-[0.02em] text-ai-blue text-justify">
               The MailTime AI whitelist is available exclusively for MailTime
               users. As a MailTime user, you can sign up for the whitelist to
               Simply open the app and click “Activate MailTime AI” on the menu
               to get exclusive early access to this new feature.
             </p>
-            <p className="font-inter font-normal lg:font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] tracking-normal lg:tracking-[0.02em] text-ai-blue text-center my-[4.4rem]">
+            <p className="font-inter font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] tracking-normal lg:tracking-[0.02em] text-ai-blue text-center my-[4.4rem]">
               We&apos;ll be in touch with more information soon, stay tuned!
             </p>
           </section>

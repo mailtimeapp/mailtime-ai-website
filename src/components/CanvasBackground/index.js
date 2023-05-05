@@ -1,75 +1,81 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useCallback, useMemo } from "react";
 import Circle from "./circle";
 import { resizeCanvasToDisplaySize } from "./canvas-helper";
 
 const CanvasBackground = (props) => {
   const canvasRef = useRef(null);
 
-  const circles = [];
+  const circles = useMemo(() => [], []);
 
-  const init = (canvas) => {
-    console.log("Initiate...");
-    const circlesConfig = [
-      {
-        x: Math.floor(canvas.width * 0.9),
-        y: Math.floor(canvas.height - canvas.height / 6),
-        r: Math.floor(canvas.height / 6),
-        color: "#00f",
-      },
-      {
-        x: Math.floor(canvas.width * 0.8),
-        y: Math.floor(canvas.height * 0.5),
-        r: Math.floor(canvas.height * 0.1),
-        color: "#00FFFF",
-      },
-      {
-        x: Math.floor(canvas.width * 0.1),
-        y: Math.floor(canvas.height * 0.2),
-        r: Math.floor(canvas.height / 10),
-        color: "#00f",
-      },
-      {
-        x: Math.floor(canvas.width * 0.2),
-        y: Math.floor(canvas.height * 0.1),
-        r: Math.floor(canvas.height * 0.05),
-        color: "#00FFFF",
-      },
-    ];
+  const init = useCallback(
+    (canvas) => {
+      console.log("Initiate...");
+      /* Resize the canvas to match screen density */
+      resizeCanvasToDisplaySize(canvas);
+      // resizeCanvas(canvas);
 
-    for (const config of circlesConfig) {
-      circles.push(new Circle(config.x, config.y, config.r, config.color));
-    }
+      /* create circles */
+      const circlesConfig = [
+        {
+          x: Math.floor(canvas.width * 0.9),
+          y: Math.floor(canvas.height - canvas.height / 6),
+          r: Math.floor(canvas.height / 6),
+          color: "#00f",
+        },
+        {
+          x: Math.floor(canvas.width * 0.8),
+          y: Math.floor(canvas.height * 0.5),
+          r: Math.floor(canvas.height * 0.1),
+          color: "#00FFFF",
+        },
+        {
+          x: Math.floor(canvas.width * 0.1),
+          y: Math.floor(canvas.height * 0.2),
+          r: Math.floor(canvas.height / 10),
+          color: "#00f",
+        },
+        {
+          x: Math.floor(canvas.width * 0.2),
+          y: Math.floor(canvas.height * 0.1),
+          r: Math.floor(canvas.height * 0.05),
+          color: "#00FFFF",
+        },
+      ];
 
-    console.log("circles=", circles);
-  };
+      for (const config of circlesConfig) {
+        circles.push(new Circle(config.x, config.y, config.r, config.color));
+      }
 
-  const update = (ctx, frameCount) => {
-    for (const circle of circles) {
-      circle.update(ctx, frameCount);
-    }
-  };
+      console.log("circles=", circles);
+    },
+    [circles]
+  );
 
-  const draw = (ctx, frameCount) => {
-    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-    // drawCircle(ctx, canvas.width / 2, canvas.height / 2, frameCount);
+  const update = useCallback(
+    (ctx, frameCount) => {
+      for (const circle of circles) {
+        circle.update(ctx, frameCount);
+      }
+    },
+    [circles]
+  );
+  const draw = useCallback(
+    (ctx, frameCount) => {
+      ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+      // drawCircle(ctx, canvas.width / 2, canvas.height / 2, frameCount);
 
-    for (const circle of circles) {
-      circle.draw(ctx, frameCount);
-    }
-  };
-
+      for (const circle of circles) {
+        circle.draw(ctx, frameCount);
+      }
+    },
+    [circles]
+  );
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
-    /* Resize the canvas to match screen density */
-    resizeCanvasToDisplaySize(canvas);
-    // resizeCanvas(canvas);
-
     let frameCount = 0;
     let animationFrameId;
-
-    // ctx.filter = "blur(60px)";
 
     init(canvas);
 
@@ -85,7 +91,7 @@ const CanvasBackground = (props) => {
     return () => {
       window.cancelAnimationFrame(animationFrameId);
     };
-  }, []);
+  }, [init, update, draw]);
 
   return (
     <canvas

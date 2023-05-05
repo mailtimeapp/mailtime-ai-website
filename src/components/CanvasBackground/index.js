@@ -10,6 +10,7 @@ const CanvasBackground = (props) => {
   const init = useCallback(
     (canvas) => {
       console.log("Initiate...");
+      circles.splice(0, circles.length);
       /* Resize the canvas to match screen density */
       resizeCanvasToDisplaySize(canvas);
       // resizeCanvas(canvas);
@@ -74,7 +75,6 @@ const CanvasBackground = (props) => {
   const draw = useCallback(
     (ctx, frameCount) => {
       ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-      // drawCircle(ctx, canvas.width / 2, canvas.height / 2, frameCount);
 
       for (const circle of circles) {
         circle.draw(ctx, frameCount);
@@ -99,6 +99,11 @@ const CanvasBackground = (props) => {
     };
 
     render();
+
+    window.addEventListener("resize", () => {
+      resizeCanvasToDisplaySize(canvasRef.current);
+      init(canvasRef.current);
+    });
 
     return () => {
       window.cancelAnimationFrame(animationFrameId);

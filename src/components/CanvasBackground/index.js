@@ -1,87 +1,14 @@
 import { useEffect, useRef } from "react";
-
-function resizeCanvasToDisplaySize(canvas) {
-  const { width, height } = canvas.getBoundingClientRect();
-
-  if (canvas.width !== width || canvas.height !== height) {
-    canvas.width = width;
-    canvas.height = height;
-    return true;
-  }
-
-  return false;
-}
-
-function resizeCanvas(canvas) {
-  const { width, height } = canvas.getBoundingClientRect();
-  console.log(width, height);
-
-  if (canvas.width !== width || canvas.height !== height) {
-    const { devicePixelRatio: ratio = 1 } = window;
-    const ctx = canvas.getContext("2d");
-    canvas.width = width * ratio;
-    canvas.height = height * ratio;
-    console.log(canvas.width, canvas.height);
-    ctx.scale(ratio, ratio);
-    return true;
-  }
-
-  return false;
-}
-
-class Circle {
-  constructor(x, y, r, color) {
-    this.x = x;
-    this.y = y;
-    this.vx = 2 * Math.random() - 1;
-    this.vy = 2 * Math.random() - 1;
-    this.r = r;
-    this.dr = r * 0.4;
-    this.color = color;
-  }
-  update(canvas, frameCount) {
-    if (this.x < 0) {
-      this.vx = Math.abs(this.vx);
-    }
-    if (this.x > canvas.width) {
-      this.vx = -Math.abs(this.vx);
-    }
-    if (this.y < 0) {
-      this.vy = Math.abs(this.vy);
-    }
-    if (this.y > canvas.height) {
-      this.vy = -Math.abs(this.vy);
-    }
-
-    this.x += this.vx;
-    this.y += this.vy;
-  }
-  draw(ctx, frameCount) {
-    ctx.fillStyle = this.color;
-    ctx.beginPath();
-    ctx.arc(
-      this.x,
-      this.y,
-      this.r + this.dr * Math.sin(frameCount * 0.01),
-      0,
-      2 * Math.PI
-    );
-    ctx.fill();
-  }
-}
-
-// function drawCircle(ctx, x, y, frameCount) {
-//   ctx.fillStyle = "#00f";
-//   ctx.beginPath();
-//   ctx.arc(x, y, 50 + 100 * Math.sin(frameCount * 0.05) ** 2, 0, 2 * Math.PI);
-//   ctx.fill();
-// }
+import Circle from "./circle";
+import { resizeCanvasToDisplaySize } from "./canvas-helper";
 
 const CanvasBackground = (props) => {
   const canvasRef = useRef(null);
 
-  let circles = [];
+  const circles = [];
+
   const init = (canvas) => {
+    console.log("Initiate...");
     const circlesConfig = [
       {
         x: Math.floor(canvas.width * 0.9),
@@ -116,13 +43,13 @@ const CanvasBackground = (props) => {
     console.log("circles=", circles);
   };
 
-  const update = (frameCount) => {
+  const update = (ctx, frameCount) => {
     for (const circle of circles) {
-      circle.update(frameCount);
+      circle.update(ctx, frameCount);
     }
   };
 
-  const draw = (canvas, ctx, frameCount) => {
+  const draw = (ctx, frameCount) => {
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     // drawCircle(ctx, canvas.width / 2, canvas.height / 2, frameCount);
 
@@ -134,22 +61,25 @@ const CanvasBackground = (props) => {
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
+
+    /* Resize the canvas to match screen density */
     resizeCanvasToDisplaySize(canvas);
     // resizeCanvas(canvas);
 
     let frameCount = 0;
     let animationFrameId;
 
-    ctx.filter = "blur(60px)";
+    // ctx.filter = "blur(60px)";
 
     init(canvas);
 
     const render = () => {
       frameCount++;
-      update(canvas, frameCount);
-      draw(canvas, ctx, frameCount);
+      update(ctx, frameCount);
+      draw(ctx, frameCount);
       animationFrameId = window.requestAnimationFrame(render);
     };
+
     render();
 
     return () => {

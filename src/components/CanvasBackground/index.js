@@ -105,10 +105,20 @@ const CanvasBackground = (props) => {
       init(canvasRef.current);
     });
 
+    let lastScrollY = window.scrollY;
+    window.addEventListener("scroll", () => {
+      let diff = lastScrollY - window.scrollY;
+      lastScrollY = window.scrollY;
+      console.log(diff);
+      for (const circle of circles) {
+        circle.updateOnScroll(diff);
+      }
+    });
+
     return () => {
       window.cancelAnimationFrame(animationFrameId);
     };
-  }, [init, update, draw]);
+  }, [circles, init, update, draw]);
 
   return (
     <canvas

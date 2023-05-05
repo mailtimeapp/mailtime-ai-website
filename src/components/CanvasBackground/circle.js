@@ -11,20 +11,25 @@ export default class Circle {
   }
   update(ctx, frameCount) {
     if (this.x < 0) {
-      this.vx = Math.abs(this.vx);
+      this.vx = Math.abs(this.vx) * 0.8;
     }
     if (this.x > ctx.canvas.width) {
-      this.vx = -Math.abs(this.vx);
+      this.vx = -Math.abs(this.vx) * 0.8;
     }
     if (this.y < 0) {
-      this.vy = Math.abs(this.vy);
+      this.vy = Math.abs(this.vy) * 0.8;
     }
     if (this.y > ctx.canvas.height) {
-      this.vy = -Math.abs(this.vy);
+      this.vy = -Math.abs(this.vy) * 0.8;
     }
 
     this.x += this.vx;
     this.y += this.vy;
+    this.vx *= 0.97;
+    this.vy *= 0.97;
+  }
+  updateOnScroll(diff) {
+    this.vy += diff * 0.005;
   }
   draw(ctx, frameCount) {
     ctx.fillStyle = this.color;

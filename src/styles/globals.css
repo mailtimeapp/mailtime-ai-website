@@ -11,6 +11,7 @@ html {
   font-size: 62.5%; /* set the root font-size be 10px */
   min-height: 100vh;
   scroll-behavior: smooth !important;
+  min-height: -webkit-fill-available;
 }
 
 body {
@@ -20,4 +21,5 @@ body {
   font-weight: normal;
   background-color: #ffffff;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
 }

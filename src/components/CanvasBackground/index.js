@@ -33,13 +33,39 @@ class Circle {
   constructor(x, y, r, color) {
     this.x = x;
     this.y = y;
+    this.vx = 2 * Math.random() - 1;
+    this.vy = 2 * Math.random() - 1;
     this.r = r;
+    this.dr = r * 0.4;
     this.color = color;
+  }
+  update(canvas, frameCount) {
+    if (this.x < 0) {
+      this.vx = Math.abs(this.vx);
+    }
+    if (this.x > canvas.width) {
+      this.vx = -Math.abs(this.vx);
+    }
+    if (this.y < 0) {
+      this.vy = Math.abs(this.vy);
+    }
+    if (this.y > canvas.height) {
+      this.vy = -Math.abs(this.vy);
+    }
+
+    this.x += this.vx;
+    this.y += this.vy;
   }
   draw(ctx, frameCount) {
     ctx.fillStyle = this.color;
     ctx.beginPath();
-    ctx.arc(this.x, this.y, this.r, 0, 2 * Math.PI);
+    ctx.arc(
+      this.x,
+      this.y,
+      this.r + this.dr * Math.sin(frameCount * 0.01),
+      0,
+      2 * Math.PI
+    );
     ctx.fill();
   }
 }
@@ -90,6 +116,12 @@ const CanvasBackground = (props) => {
     console.log("circles=", circles);
   };
 
+  const update = (frameCount) => {
+    for (const circle of circles) {
+      circle.update(frameCount);
+    }
+  };
+
   const draw = (canvas, ctx, frameCount) => {
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     // drawCircle(ctx, canvas.width / 2, canvas.height / 2, frameCount);
@@ -114,6 +146,7 @@ const CanvasBackground = (props) => {
 
     const render = () => {
       frameCount++;
+      update(canvas, frameCount);
       draw(canvas, ctx, frameCount);
       animationFrameId = window.requestAnimationFrame(render);
     };

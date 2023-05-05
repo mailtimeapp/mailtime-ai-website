@@ -176,13 +176,13 @@ const Home = () => {
                       className="underline underline-offset-4"
                     >
                       <span className="whitespace-nowrap">
-                        <Image
-                          src="/static/img/mdt-icon.svg"
-                          alt="The icon of Measurable Data Token(MDT)"
-                          width={isDesktop ? 21 : 14}
-                          height={isDesktop ? 21 : 14}
-                          className="inline align-sub"
-                        />{" "}
+                        <span className="inline-block relative w-[1.4rem] h-[1.4rem] lg:w-[2.1rem] lg:h-[2.1rem] align-sub">
+                          <Image
+                            src="/static/img/mdt-icon.svg"
+                            alt="The icon of Measurable Data Token(MDT)"
+                            fill
+                          />
+                        </span>{" "}
                         Measurable
                       </span>{" "}
                       Data Token (MDT)

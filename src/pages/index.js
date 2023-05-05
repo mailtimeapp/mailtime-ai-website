@@ -207,7 +207,8 @@ const Home = () => {
                     limited number of MDT to experience MailTime AI.
                   </p>
                   <p className="font-medium text-[1.4rem] lg:text-[2.1rem] my-[1.4rem] lg:my-[1.8rem] leading-[1.8rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
-                    Simply click the “Join Whitelist” button below to sign up.
+                    Simply click the “Join Whitelist” button to receive a
+                    confirmation email with further instructions.
                   </p>
                 </article>
               </section>

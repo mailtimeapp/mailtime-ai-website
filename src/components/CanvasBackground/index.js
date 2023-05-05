@@ -19,25 +19,37 @@ const CanvasBackground = (props) => {
         {
           x: Math.floor(canvas.width * 0.9),
           y: Math.floor(canvas.height - canvas.height / 6),
-          r: Math.floor(canvas.height / 6),
-          color: "#00f",
+          r: Math.floor(Math.min(canvas.width, canvas.height) * 0.2),
+          color: "#356bff",
         },
         {
           x: Math.floor(canvas.width * 0.8),
           y: Math.floor(canvas.height * 0.5),
-          r: Math.floor(canvas.height * 0.1),
+          r: Math.floor(Math.min(canvas.width, canvas.height) * 0.1),
+          color: "#00FFFF",
+        },
+        {
+          x: Math.floor(canvas.width * 0.7),
+          y: Math.floor(canvas.height * 0.9),
+          r: Math.floor(Math.min(canvas.width, canvas.height) * 0.1),
           color: "#00FFFF",
         },
         {
           x: Math.floor(canvas.width * 0.1),
           y: Math.floor(canvas.height * 0.2),
-          r: Math.floor(canvas.height / 10),
-          color: "#00f",
+          r: Math.floor(Math.min(canvas.width, canvas.height) * 0.1),
+          color: "#356bff",
         },
         {
           x: Math.floor(canvas.width * 0.2),
           y: Math.floor(canvas.height * 0.1),
-          r: Math.floor(canvas.height * 0.05),
+          r: Math.floor(Math.min(canvas.width, canvas.height) * 0.05),
+          color: "#00FFFF",
+        },
+        {
+          x: Math.floor(canvas.width * 0.1),
+          y: Math.floor(canvas.height * 0.4),
+          r: Math.floor(Math.min(canvas.width, canvas.height) * 0.02),
           color: "#00FFFF",
         },
       ];
@@ -96,7 +108,7 @@ const CanvasBackground = (props) => {
   return (
     <canvas
       id="bg-canvas"
-      className="fixed top-0 left-0 w-screen h-screen z-[-1]"
+      className="fixed top-0 left-0 w-screen h-screen z-[-1] filter blur-3xl"
       ref={canvasRef}
       {...props}
     ></canvas>

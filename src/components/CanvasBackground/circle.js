@@ -2,8 +2,8 @@ export default class Circle {
   constructor(x, y, r, color) {
     this.x = x;
     this.y = y;
-    this.vx = Math.random() - 0.5;
-    this.vy = Math.random() - 0.5;
+    this.vx = (Math.random() - 0.5) * 0.5;
+    this.vy = (Math.random() - 0.5) * 0.5;
     this.r = r;
     this.dr = r * 0.4;
     this.offset = Math.floor(Math.random() * 500);
@@ -32,7 +32,7 @@ export default class Circle {
     ctx.arc(
       this.x,
       this.y,
-      this.r + this.dr * Math.sin(this.offset + frameCount * 0.01),
+      this.r + this.dr * Math.sin(this.offset + frameCount * 0.005),
       0,
       2 * Math.PI
     );

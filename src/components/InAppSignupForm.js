@@ -12,7 +12,7 @@ export default function InAppSignupForm({ email, registered }) {
     setStatus("sending");
 
     fetch(
-      `https://public.svc.sync.email//mtapp/api/v1/ai/whitelist/join?email=${email}`,
+      `${process.env.NEXT_PUBLIC_JOIN_AI_WHITELIST_API}?email=${email}`,
       {
         method: "POST",
       }

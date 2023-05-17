@@ -63,9 +63,7 @@ const Home = () => {
         />
       </Head>
       <div className="z-10">
-        <div
-          className={`${styles.page} "bg-no-repeat w-full mx-auto min-h-screen"`}
-        >
+        <div className="bg-no-repeat w-full mx-auto min-h-screen">
           {!registeredInQuery && <Navbar />}
           <div
             className={`w-full lg:w-[70%] 2xl:w-[100rem] mx-auto ${

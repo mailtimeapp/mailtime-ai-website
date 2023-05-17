@@ -4,7 +4,7 @@ import HeroCanvas from "./HeroCanvas";
 const CanvasBackground = () => {
   return (
     <>
-      <HeroCanvas />
+      {/* <HeroCanvas /> */}
       <BgCanvas />
     </>
   );

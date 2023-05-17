@@ -104,7 +104,7 @@ const Home = () => {
               <section className="flex flex-col lg:flex-row lg:items-center">
                 <div className="w-8/12 lg:w-6/12 aspect-[24/45] mx-auto lg:mx-[3.1rem] relative">
                   <Image
-                    src="/static/img/mailtimeai-mockup.png"
+                    src="/static/img/mailtimeai-mockup.png?t=20230517"
                     fill
                     alt="A mockup image shows using MailTime AI in an email chat."
                   ></Image>

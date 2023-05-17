@@ -102,11 +102,14 @@ const Home = () => {
           {!registeredInQuery && (
             <>
               <section className="flex flex-col lg:flex-row lg:items-center">
-                <div className="w-8/12 lg:w-6/12 aspect-[24/45] mx-auto lg:mx-[3.1rem] relative">
+                <div
+                  className={`w-8/12 lg:w-6/12 aspect-[24/45] mx-auto lg:mx-[3.1rem] relative ${styles.mockup}`}
+                >
                   <Image
                     src="/static/img/mailtimeai-mockup.png?t=20230517"
                     fill
                     alt="A mockup image shows using MailTime AI in an email chat."
+                    className="z-[2]"
                   ></Image>
                 </div>
                 <div className="w-10/12 lg:w-6/12 flex flex-col items-center mt-[1.2rem] space-y-[0.9rem] lg:mt-0 mx-auto">

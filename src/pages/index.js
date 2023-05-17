@@ -102,11 +102,14 @@ const Home = () => {
           {!registeredInQuery && (
             <>
               <section className="flex flex-col lg:flex-row lg:items-center">
-                <div className="w-8/12 lg:w-6/12 aspect-[24/45] mx-auto lg:mx-[3.1rem] relative">
+                <div
+                  className={`w-8/12 lg:w-6/12 aspect-[24/45] mx-auto lg:mx-[3.1rem] relative ${styles.mockup}`}
+                >
                   <Image
-                    src="/static/img/mailtimeai-mockup.png"
+                    src="/static/img/mailtimeai-mockup.png?t=20230517"
                     fill
                     alt="A mockup image shows using MailTime AI in an email chat."
+                    className="z-[2]"
                   ></Image>
                 </div>
                 <div className="w-10/12 lg:w-6/12 flex flex-col items-center mt-[1.2rem] space-y-[0.9rem] lg:mt-0 mx-auto">
@@ -168,24 +171,26 @@ const Home = () => {
                 <article className="font-inter text-ai-blue text-justify">
                   <p className="font-medium text-[1.4rem] lg:text-[2.1rem] my-[1.4rem] lg:my-[1.8rem] leading-[1.8rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
                     Experience the disruptive email messaging experience powered
-                    by ChatGPT, brought to you by{" "}
+                    by <b>Generative AI</b>, brought to you by{" "}
                     <a
                       href="https://mdt.io/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="underline underline-offset-4"
+                      className="underline underline-offset-4 cursor-pointer"
                     >
-                      <span className="whitespace-nowrap">
-                        <span className="inline-block relative w-[1.4rem] h-[1.4rem] lg:w-[2.1rem] lg:h-[2.1rem] align-sub">
-                          <Image
-                            src="/static/img/mdt-icon.svg"
-                            alt="The icon of Measurable Data Token(MDT)"
-                            fill
-                          />
+                      <b>
+                        <span className="whitespace-nowrap">
+                          <span className="inline-block relative w-[1.4rem] h-[1.4rem] lg:w-[2.1rem] lg:h-[2.1rem] align-sub">
+                            <Image
+                              src="/static/img/mdt-icon.svg"
+                              alt="The icon of Measurable Data Token(MDT)"
+                              fill
+                            />
+                          </span>{" "}
+                          Measurable
                         </span>{" "}
-                        Measurable
-                      </span>{" "}
-                      Data Token (MDT)
+                        Data Token (MDT)
+                      </b>
                     </a>
                     .
                   </p>
@@ -199,15 +204,16 @@ const Home = () => {
                   <p className="font-medium text-[1.4rem] lg:text-[2.1rem] my-[1.4rem] lg:my-[1.8rem] leading-[1.8rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
                     MailTime AI whitelist is free for a limited time, so
                     don&apos;t miss out on this opportunity to get early access
-                    to our ChatGPT-powered email reply drafts (before it&apos;s
-                    full!).
+                    to our Generative AI-powered email reply drafts (before
+                    it&apos;s full!).
                   </p>
                   <p className="font-medium text-[1.4rem] lg:text-[2.1rem] my-[1.4rem] lg:my-[1.8rem] leading-[1.8rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
-                    During priority access phase, each user will be airdropped a
-                    limited number of MDT to experience MailTime AI.
+                    During priority access phase, each user will also be
+                    airdropped a limited number of MDT to experience MailTime
+                    AI.
                   </p>
                   <p className="font-medium text-[1.4rem] lg:text-[2.1rem] my-[1.4rem] lg:my-[1.8rem] leading-[1.8rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
-                    Simply click the “Join Whitelist” button to receive a
+                    Simply click the <b>“Join Whitelist”</b> button to receive a
                     confirmation email with further instructions.
                   </p>
                 </article>
@@ -241,19 +247,19 @@ const Home = () => {
               </h3>
               <p className="font-inter font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] tracking-normal lg:tracking-[0.02em] text-ai-blue text-justify">
                 The MailTime AI whitelist is available exclusively for MailTime
-                users. As a MailTime user, you can sign up for the whitelist to
-                Simply open the app and click “Activate MailTime AI” on the menu
-                to get exclusive early access to this new feature.
+                users. As a MailTime user, you can sign up for the whitelist by
+                simply opening the app and clicking “Activate MailTime AI” on
+                the side menu to get exclusive early access to this new feature.
               </p>
               <p className="font-inter font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] tracking-normal lg:tracking-[0.02em] text-ai-blue text-center my-[4.4rem]">
-                We&apos;ll be in touch with more information soon, stay tuned!
+                We&apos;ll be in touch with more information soon.
               </p>
             </section>
           )}
           {emailInQuery && (
             <section className="w-full lg:w-10/12 mx-auto px-[3.5rem] lg:px-0">
               <p className="font-inter font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] tracking-normal lg:tracking-[0.02em] text-ai-blue text-center my-[2rem]">
-                We&apos;ll be in touch with more information soon, stay tuned!
+                We&apos;ll be in touch with more information soon.
               </p>
               <p className="font-inter font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] tracking-normal lg:tracking-[0.02em] text-ai-blue text-center my-[2rem]">
                 If you have any inquiries, please contact support@mailtime.com

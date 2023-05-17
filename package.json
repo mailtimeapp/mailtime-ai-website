@@ -5,12 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:staging": "env-cmd -f .env.staging next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@uiball/loaders": "^1.2.6",
     "autoprefixer": "10.4.14",
+    "env-cmd": "^10.1.0",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.4",
     "next": "13.3.4",

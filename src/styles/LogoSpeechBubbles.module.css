@@ -8,13 +8,18 @@
 }
 
 .logoSpeechBubbles path {
-  animation: scaleUpDown 1000ms ease-in-out both;
+  animation: scaleUpDown 1000ms cubic-bezier(0.1, 1.17, 0.48, 1.54) both 400ms;
   will-change: transform;
   transform-origin: center;
 }
 
 @keyframes scaleUpDown {
   0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  25% {
+    opacity: 1;
     transform: scale(1);
   }
   100% {

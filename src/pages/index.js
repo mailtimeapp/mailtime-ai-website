@@ -10,6 +10,7 @@ import Link from "next/link";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CanvasBackground from "@/components/CanvasBackground";
 
 const Home = () => {
   const [email, setEmail] = useState("");
@@ -79,7 +80,7 @@ const Home = () => {
               <div className="w-full aspect-[87/32] hidden lg:block relative">
                 <Image
                   src="/static/img/hero-title.svg"
-                  alt="Early access starts... NOW. Priority Access to MailTime AI powered by ChatGPT"
+                  alt="Early access starts... NOW. Priority Access to MailTime AI powered by Generative AI"
                   fill
                   priority
                 />
@@ -87,7 +88,7 @@ const Home = () => {
               <div className="w-full aspect-[306/199] block lg:hidden relative">
                 <Image
                   src="/static/img/hero-title-mobile.svg"
-                  alt="Early access starts... NOW. Priority Access to MailTime AI powered by ChatGPT"
+                  alt="Early access starts... NOW. Priority Access to MailTime AI powered by Generative AI"
                   fill
                   priority
                 />
@@ -118,7 +119,7 @@ const Home = () => {
                       src="/static/img/mailtimeai-logo.svg"
                       width={298}
                       height={62}
-                      alt="MailTime AI powered by ChatGPT"
+                      alt="MailTime AI powered by Generative AI"
                     ></Image>
                   </div>
                   <div className="flex flex-row items-center space-x-[2.1rem] md:space-x-[1.6rem]">
@@ -227,9 +228,9 @@ const Home = () => {
                 <p className="font-medium text-[1.4rem] lg:text-[2.1rem] my-[1.4rem] lg:my-[1.8rem] leading-[1.8rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
                   Be among the first to experience the power of MailTime AI!
                   Sign up for our whitelist and get early access to our
-                  ChatGPT-powered email reply drafts (before it’s full!). As a
-                  valued MailTime user, you&apos;ll be able to reply smarter and
-                  save time with our new AI feature.
+                  Generative AI-powered email reply drafts (before it’s full!).
+                  As a valued MailTime user, you&apos;ll be able to reply
+                  smarter and save time with our new AI feature.
                 </p>
               </article>
             </section>
@@ -268,6 +269,8 @@ const Home = () => {
           )}
         </div>
       </div>
+
+      <CanvasBackground />
       {!registeredInQuery && <Footer />}
     </>
   );

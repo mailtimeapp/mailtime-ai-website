@@ -23,7 +23,7 @@ const CustomForm = ({ status, message, onValidated }) => {
   }, [router.query]);
 
   useEffect(() => {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/.test(email)) {
       setIsValid(true);
     } else {
       setIsValid(false);

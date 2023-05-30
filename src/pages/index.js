@@ -45,22 +45,13 @@ const Home = () => {
         />
         <meta
           name="description"
-          content="MailTime is the Email Messenger that makes email as quick and easy as texting. Download MailTime today to upgrade your email messaging experience."
+          content="Experience the disruptive email messaging experience powered by Generative AI, brought to you by Measurable Data Token (MDT)."
         />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <meta
-          name="apple-itunes-app"
-          content="app-id=914281815, affiliate-data=myAffiliateData, app-argument=myURL"
-        />
-        <meta
-          name="google-site-verification"
-          content="mtGZdEB7Wyg8LZkfMicDYpDB0zfvXYLJENsXflLyvjw"
-        />
+        <meta name="apple-mobile-web-app-status-bar-style" content="white" />
       </Head>
       <div className="bg-no-repeat w-full mx-auto min-h-screen overflow-x-hidden">
         {!registeredInQuery && <Navbar />}

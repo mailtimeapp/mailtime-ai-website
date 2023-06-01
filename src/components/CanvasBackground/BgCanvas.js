@@ -52,8 +52,6 @@ const init = (canvas) => {
   for (const config of circlesConfig) {
     circles.push(new Circle(config.x, config.y, config.r, config.color));
   }
-
-  console.log("circles=", circles);
 };
 
 const update = (ctx, frameCount) => {
@@ -100,7 +98,6 @@ const BgCanvas = (props) => {
     window.addEventListener("scroll", () => {
       let diff = lastScrollY - window.scrollY;
       lastScrollY = window.scrollY;
-      console.log(diff);
       for (const circle of circles) {
         circle.updateOnScroll(diff);
       }

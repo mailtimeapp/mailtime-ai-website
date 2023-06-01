@@ -12,14 +12,12 @@ export function resizeCanvasToDisplaySize(canvas) {
 
 export function resizeCanvas(canvas) {
   const { width, height } = canvas.getBoundingClientRect();
-  console.log(width, height);
 
   if (canvas.width !== width || canvas.height !== height) {
     const { devicePixelRatio: ratio = 1 } = window;
     const ctx = canvas.getContext("2d");
     canvas.width = width * ratio;
     canvas.height = height * ratio;
-    console.log(canvas.width, canvas.height);
     ctx.scale(ratio, ratio);
     return true;
   }

@@ -38,13 +38,13 @@ const HowDoesMailtimeAiWorkDetails = () => {
     <div className="p-6">
       {content.map((step, index) => (
         <>
-          <div className="font-inter text-[1.4rem] leading-normal flex flex-row items-start space-x-4 max-w-[37.5rem] mx-auto">
-            <div className="rounded-full bg-ai-blue text-white px-2">
+          <div className="mx-auto flex max-w-[37.5rem] flex-row items-start space-x-4 font-inter text-[1.4rem] leading-normal">
+            <div className="rounded-full bg-ai-blue px-2 text-white">
               {index + 1}
             </div>
             <h4 className="text-ai-blue">{step.title}</h4>
           </div>
-          <div className="w-full max-w-[375px] mx-auto relative mt-6 mb-10">
+          <div className="relative mx-auto mb-10 mt-6 w-full max-w-[375px]">
             <Image
               src={step.img.src}
               alt={step.img.alt}
@@ -109,9 +109,9 @@ const BalancePage = () => {
         />
         <meta name="apple-mobile-web-app-status-bar-style" content="white" />
       </Head>
-      <div className="bg-no-repeat w-full mx-auto min-h-screen overflow-x-hidden">
-        <div className="px-[2.4rem] mx-auto">
-          <div className="my-16 w-full pt-[36.09%] relative">
+      <div className="mx-auto min-h-screen w-full overflow-x-hidden bg-no-repeat">
+        <div className="mx-auto px-[2.4rem]">
+          <div className="relative my-16 w-full pt-[36.09%]">
             <Image
               src="/static/img/balance-hero-title.svg"
               alt="Measurable Data Token (MDT) Exclusive Use for MailTime AI"
@@ -120,7 +120,7 @@ const BalancePage = () => {
             />
           </div>
 
-          <p className="font-inter text-[1.4rem] text-ai-blue my-[2.4rem]">
+          <p className="my-[2.4rem] font-inter text-[1.4rem] text-ai-blue">
             You can now experience the power of MailTime AI first hand!
             <br />
             <br />
@@ -128,10 +128,10 @@ const BalancePage = () => {
             be replenished daily to a maximum of 10.
           </p>
 
-          <div className="flex flex-col w-full rounded-[0.4rem] overflow-hidden border border-ai-blue">
-            <div className="flex flex-row items-center justify-between bg-ai-blue text-white p-6">
+          <div className="flex w-full flex-col overflow-hidden rounded-[0.4rem] border border-ai-blue">
+            <div className="flex flex-row items-center justify-between bg-ai-blue p-6 text-white">
               <div className="flex flex-row">
-                <div className="w-[2.4rem] h-[2.4rem] mr-[0.8rem] relative">
+                <div className="relative mr-[0.8rem] h-[2.4rem] w-[2.4rem]">
                   <Image
                     src="/static/img/wallet.svg"
                     alt="The icon of wallet"
@@ -142,8 +142,8 @@ const BalancePage = () => {
               </div>
               <p className="font-inter text-[1.4rem]">abc@abc.com</p>
             </div>
-            <div className="p-6 font-inter flex flex-row items-center">
-              <div className="w-[3.6rem] h-[3.8rem] mr-[0.8rem] relative">
+            <div className="flex flex-row items-center p-6 font-inter">
+              <div className="relative mr-[0.8rem] h-[3.8rem] w-[3.6rem]">
                 <Image
                   src="/static/img/mdt-coin.svg"
                   alt="The icon of wallet"
@@ -151,14 +151,14 @@ const BalancePage = () => {
                 />
               </div>
               <div className="w-full">
-                <h3 className="text-sm font-medium text-gray-700 tracking-tight">
+                <h3 className="text-sm font-medium tracking-tight text-gray-700">
                   Measurable Data Tokens
                 </h3>
                 <h4 className="text-[1.2rem] text-gray-500">
                   Exclusive use for MailTime AI
                 </h4>
               </div>
-              <div className="text-[2.4rem] text-ai-blue font-semibold">10</div>
+              <div className="text-[2.4rem] font-semibold text-ai-blue">10</div>
             </div>
           </div>
 

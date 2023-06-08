@@ -114,13 +114,15 @@ const BalancePage = () => {
         <meta name="apple-mobile-web-app-status-bar-style" content="white" />
       </Head>
       <div className="mx-auto min-h-screen w-full overflow-x-hidden bg-no-repeat">
-        <div className="mx-auto px-[2.4rem]">
-          <div className="relative my-16 w-full pt-[36.09%]">
+        <div className="mx-auto max-w-[60rem] px-[2.4rem]">
+          <div className="relative my-16 w-full">
             <Image
               src="/static/img/balance-hero-title.svg"
               alt="Measurable Data Token (MDT) Exclusive Use for MailTime AI"
-              fill
+              width={654}
+              height={236}
               priority
+              className="mx-auto"
             />
           </div>
 

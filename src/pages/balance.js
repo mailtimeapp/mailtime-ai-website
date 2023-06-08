@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import CollapseCard from "@/components/CollapseCard";
+import { useRouter } from "next/router";
+import { LeapFrog } from "@uiball/loaders";
 import CanvasBackground from "@/components/CanvasBackground";
 
 const HowDoesMailtimeAiWorkDetails = () => {
@@ -99,6 +101,8 @@ const DisclaimerDetails = () => (
 );
 
 const BalancePage = () => {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -140,7 +144,11 @@ const BalancePage = () => {
                 </div>
                 <h2 className="text-sm font-bold">Balance</h2>
               </div>
-              <p className="font-inter text-[1.4rem]">abc@abc.com</p>
+              <div className="font-inter text-[1.4rem]">
+                {router.query.email || (
+                  <LeapFrog size={24} speed={2} color="#fff" />
+                )}
+              </div>
             </div>
             <div className="flex flex-row items-center p-6 font-inter">
               <div className="relative mr-[0.8rem] h-[3.8rem] w-[3.6rem]">
@@ -158,7 +166,11 @@ const BalancePage = () => {
                   Exclusive use for MailTime AI
                 </h4>
               </div>
-              <div className="text-[2.4rem] font-semibold text-ai-blue">10</div>
+              <div className="text-[2.4rem] font-semibold text-ai-blue">
+                {router.query.balance || (
+                  <LeapFrog size={24} speed={2} color="#0000ff" />
+                )}
+              </div>
             </div>
           </div>
 

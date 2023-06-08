@@ -153,11 +153,12 @@ const BalancePage = () => {
               </div>
             </div>
             <div className="flex flex-row items-center p-6 font-inter">
-              <div className="relative mr-[0.8rem] h-[3.8rem] w-[3.6rem]">
+              <div className="relative mr-[0.8rem] w-[3.6rem] shrink-0">
                 <Image
-                  src="/static/img/mdt-coin.svg"
+                  src="/static/img/mdt-coin.png"
                   alt="The icon of wallet"
-                  fill
+                  width={72}
+                  height={76}
                 />
               </div>
               <div className="w-full">

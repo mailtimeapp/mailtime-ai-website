@@ -173,6 +173,13 @@ const BalancePage = () => {
           </CollapseCard>
         </div>
 
+        <p className="mb-10 mt-16 text-center font-inter text-[1.4rem] text-ai-blue">
+          Wallet enhancements coming soon, stay tuned!
+        </p>
+        <p className="mb-32 mt-10 text-center font-inter text-[1.4rem] text-ai-blue">
+          If you have any inquiries, please contact support@mailtime.com
+        </p>
+
         {/* <CanvasBackground /> */}
       </div>
     </>

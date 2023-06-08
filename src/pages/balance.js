@@ -1,6 +1,62 @@
 import Head from "next/head";
 import Image from "next/image";
+import CollapseCard from "@/components/CollapseCard";
 import CanvasBackground from "@/components/CanvasBackground";
+
+const HowDoesMailtimeAiWorkDetails = () => {
+  const content = [
+    {
+      title: "Press on the MailTime AI icon on the bottom of the chat box.",
+      img: {
+        src: "/static/img/how-does-mailtime-ai-work/step01.jpg",
+        alt: "",
+        width: 590,
+        height: 208,
+      },
+    },
+    {
+      title:
+        "Based on the last thread of the email, you can choose the tone and length of response. Then simply hit “Generate”.",
+      img: {
+        src: "/static/img/how-does-mailtime-ai-work/step02.jpg",
+        alt: "",
+        width: 590,
+        height: 402,
+      },
+    },
+    {
+      title: "You can choose to further enhance your message!",
+      img: {
+        src: "/static/img/how-does-mailtime-ai-work/step03.jpg",
+        alt: "",
+        width: 590,
+        height: 394,
+      },
+    },
+  ];
+  return (
+    <div className="p-6">
+      {content.map((step, index) => (
+        <>
+          <div className="font-inter text-[1.4rem] leading-normal flex flex-row items-start space-x-4 max-w-[37.5rem] mx-auto">
+            <div className="rounded-full bg-ai-blue text-white px-2">
+              {index + 1}
+            </div>
+            <h4 className="text-ai-blue">{step.title}</h4>
+          </div>
+          <div className="w-full max-w-[375px] mx-auto relative mt-6 mb-10">
+            <Image
+              src={step.img.src}
+              alt={step.img.alt}
+              width={step.img.width}
+              height={step.img.height}
+            />
+          </div>
+        </>
+      ))}
+    </div>
+  );
+};
 
 const BalancePage = () => {
   return (
@@ -65,6 +121,10 @@ const BalancePage = () => {
               <div className="text-[2.4rem] text-ai-blue font-semibold">10</div>
             </div>
           </div>
+
+          <CollapseCard title="How does MailTime AI work?" className="my-6">
+            <HowDoesMailtimeAiWorkDetails />
+          </CollapseCard>
         </div>
 
         {/* <CanvasBackground /> */}

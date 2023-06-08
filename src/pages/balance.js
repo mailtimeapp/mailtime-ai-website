@@ -134,7 +134,7 @@ const BalancePage = () => {
             be replenished daily to a maximum of 10.
           </p>
 
-          <div className="flex w-full flex-col overflow-hidden rounded-[0.4rem] border border-ai-blue">
+          <div className="flex w-full flex-col overflow-hidden rounded-[0.4rem] border border-ai-blue bg-white">
             <div className="flex flex-row items-center justify-between bg-ai-blue p-6 text-white">
               <div className="flex flex-row">
                 <div className="relative mr-[0.8rem] h-[2.4rem] w-[2.4rem]">
@@ -195,7 +195,7 @@ const BalancePage = () => {
           If you have any inquiries, please contact support@mailtime.com
         </p>
 
-        {/* <CanvasBackground /> */}
+        <CanvasBackground />
       </div>
     </>
   );

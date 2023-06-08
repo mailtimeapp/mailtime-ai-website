@@ -7,7 +7,7 @@ const CollapseCard = ({ title, children, className = "", ...props }) => {
 
   return (
     <div
-      className={`flex flex-col w-full rounded-[0.4rem] overflow-hidden border border-ai-blue ${className}`}
+      className={`flex w-full flex-col overflow-hidden rounded-[0.4rem] border border-ai-blue bg-white ${className}`}
       onClick={() => setIsActive(!isActive)}
       {...props}
     >
@@ -17,25 +17,25 @@ const CollapseCard = ({ title, children, className = "", ...props }) => {
         }`}
       >
         <div className="flex flex-row items-center">
-          <div className="w-[2.4rem] h-[2.4rem] mr-[0.8rem] relative">
+          <div className="relative mr-[0.8rem] h-[2.4rem] w-[2.4rem]">
             <IconHelp className={isActive ? "fill-white" : "fill-ai-blue"} />
           </div>
           <h2 className="text-sm font-bold">{title}</h2>
         </div>
         <div>
           <IconArrowDropDown
-            className={`transition-transform transform ${
-              isActive ? "fill-white rotate-180" : "fill-ai-blue"
+            className={`transform transition-transform ${
+              isActive ? "rotate-180 fill-white" : "fill-ai-blue"
             }`}
           />
         </div>
       </div>
       <div
-        className={`transition-all grid ${
+        className={`grid transition-all ${
           isActive ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
         }`}
       >
-        <div className="transition-all overflow-hidden">{children}</div>
+        <div className="overflow-hidden transition-all">{children}</div>
       </div>
     </div>
   );

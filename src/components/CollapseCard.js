@@ -16,7 +16,7 @@ const CollapseCard = ({ title, children, className = "", ...props }) => {
           isActive ? "bg-ai-blue text-white" : "bg-white text-ai-blue"
         }`}
       >
-        <div className="flex flex-row">
+        <div className="flex flex-row items-center">
           <div className="w-[2.4rem] h-[2.4rem] mr-[0.8rem] relative">
             <IconHelp className={isActive ? "fill-white" : "fill-ai-blue"} />
           </div>

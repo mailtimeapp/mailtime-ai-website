@@ -58,6 +58,46 @@ const HowDoesMailtimeAiWorkDetails = () => {
   );
 };
 
+const DisclaimerDetails = () => (
+  <div className="p-6">
+    <p className="font-inter text-[1.4rem] leading-normal text-ai-blue">
+      The <b>Measurable Data Token (MDT)</b> provided during the priority access
+      phase is designed to be restricted and managed in a centralized way.{" "}
+      <b>It is intended solely for use within the MailTime AI system.</b> This
+      provision does not constitute a financial investment, security, share,
+      equity, or any form of financial or investment instrument.The tokens are
+      explicitly for use within the confines of the <b>MailTime AI</b>{" "}
+      functionalities, as a means to enhance the user experience and facilitate
+      user participation within the MailTime AI system.
+    </p>
+    <br />
+    <p className="font-inter text-[1.4rem] leading-normal text-ai-blue">
+      <b>
+        It can not be withdrawn, redeemed, transferred, or used in any other use
+        cases of the MDT at any point during or after the priority access phase.
+        Any MDT balance in the user’s MailTime accounts after the conclusion of
+        the priority access phase will be reclaimed by Measurable Foundation
+        Limited and its affiliates, at its discretion.
+      </b>
+    </p>
+    <br />
+    <p className="font-inter text-[1.4rem] leading-normal text-ai-blue">
+      All users should conduct their own due diligence before signing up for
+      MailTime AI whitelisting and subsequently accepting the provided MDT. By
+      receiving the MDT, users agree to be bound by all the restrictions
+      outlined above. Users are solely responsible for understanding and
+      complying with all laws, rules, and regulations of their specific
+      jurisdiction that may be applicable to them in connection with their
+      acceptance and use of MDT.
+    </p>
+    <br />
+    <p className="font-inter text-[1.4rem] leading-normal text-ai-blue">
+      Please refer to MailTime terms of service and privacy policy for more
+      details.
+    </p>
+  </div>
+);
+
 const BalancePage = () => {
   return (
     <>
@@ -124,6 +164,12 @@ const BalancePage = () => {
 
           <CollapseCard title="How does MailTime AI work?" className="my-6">
             <HowDoesMailtimeAiWorkDetails />
+          </CollapseCard>
+          <CollapseCard
+            title="MailTime AI Exclusive MDT Disclaimer"
+            className="my-6"
+          >
+            <DisclaimerDetails />
           </CollapseCard>
         </div>
 

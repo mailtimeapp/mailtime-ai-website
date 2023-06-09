@@ -88,7 +88,7 @@ const Home = () => {
               </div>
               {!registeredInQuery && (
                 <Link href="#join-whitelist" passHref>
-                  <JoinWhitelistButton className="ml-auto mt-[11.3rem] block lg:mt-24"></JoinWhitelistButton>
+                  <JoinWhitelistButton className="mx-auto mt-[11.3rem] block lg:ml-auto lg:mr-0 lg:mt-24"></JoinWhitelistButton>
                 </Link>
               )}
             </div>

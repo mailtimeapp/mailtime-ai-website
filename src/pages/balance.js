@@ -39,7 +39,7 @@ const HowDoesMailtimeAiWorkDetails = () => {
   return (
     <div className="p-6">
       {content.map((step, index) => (
-        <>
+        <div key={`step-${index}`}>
           <div className="mx-auto flex max-w-[37.5rem] flex-row items-start space-x-4 font-inter text-[1.4rem] leading-normal">
             <div className="rounded-full bg-ai-blue px-2 text-white">
               {index + 1}
@@ -54,7 +54,7 @@ const HowDoesMailtimeAiWorkDetails = () => {
               height={step.img.height}
             />
           </div>
-        </>
+        </div>
       ))}
     </div>
   );

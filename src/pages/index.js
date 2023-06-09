@@ -53,38 +53,42 @@ const Home = () => {
         />
         <meta name="apple-mobile-web-app-status-bar-style" content="white" />
       </Head>
-      <div className="bg-no-repeat w-full mx-auto min-h-screen overflow-x-hidden">
+      <div className="mx-auto min-h-screen w-full overflow-x-hidden bg-no-repeat">
         {!registeredInQuery && <Navbar />}
         <div
-          className={`w-full lg:w-[70%] 2xl:w-[100rem] mx-auto ${
+          className={`mx-auto w-full lg:w-[70%] 2xl:w-[100rem] ${
             registeredInQuery
               ? "py-[4rem]"
-              : "pt-[10.7rem] lg:pt-[12.2rem] pb-[17.5rem] lg:pb-[23.4rem]"
+              : "pb-[17.5rem] pt-[10.7rem] lg:pb-[23.4rem] lg:pt-[12.2rem]"
           }`}
         >
           <section
             className={registeredInQuery ? "mb-[4rem]" : "mb-[4.3rem] lg:mb-32"}
           >
             <div className="mx-auto w-10/12">
-              <div className="w-full aspect-[87/32] hidden lg:block relative">
+              <div className="relative hidden h-auto w-full lg:block">
                 <Image
                   src="/static/img/hero-title.svg"
                   alt="Early access starts... NOW. Priority Access to MailTime AI powered by Generative AI"
-                  fill
+                  width={1740}
+                  height={640}
+                  className="mx-auto"
                   priority
                 />
               </div>
-              <div className="w-full aspect-[306/199] block lg:hidden relative">
+              <div className="relative block w-full lg:hidden">
                 <Image
                   src="/static/img/hero-title-mobile.svg"
                   alt="Early access starts... NOW. Priority Access to MailTime AI powered by Generative AI"
-                  fill
+                  width={612}
+                  height={398}
+                  className="mx-auto"
                   priority
                 />
               </div>
               {!registeredInQuery && (
                 <Link href="#join-whitelist" passHref>
-                  <JoinWhitelistButton className="ml-auto block mt-[11.3rem] lg:mt-24"></JoinWhitelistButton>
+                  <JoinWhitelistButton className="ml-auto mt-[11.3rem] block lg:mt-24"></JoinWhitelistButton>
                 </Link>
               )}
             </div>
@@ -93,17 +97,18 @@ const Home = () => {
             <>
               <section className="flex flex-col lg:flex-row lg:items-center">
                 <div
-                  className={`w-8/12 lg:w-6/12 aspect-[24/45] mx-auto lg:mx-[3.1rem] relative ${styles.mockup}`}
+                  className={`relative mx-auto w-8/12 lg:mx-[3.1rem] lg:w-6/12 ${styles.mockup}`}
                 >
                   <Image
                     src="/static/img/mailtimeai-mockup.png?t=20230517"
-                    fill
                     alt="A mockup image shows using MailTime AI in an email chat."
-                    className="z-[2]"
+                    className="mx-auto"
+                    width={776}
+                    height={1427}
                   ></Image>
                 </div>
-                <div className="w-10/12 lg:w-6/12 flex flex-col items-center mt-[1.2rem] space-y-[0.9rem] lg:mt-0 mx-auto">
-                  <div className="flex mx-auto">
+                <div className="mx-auto mt-[1.2rem] flex w-10/12 flex-col items-center space-y-[0.9rem] lg:mt-0 lg:w-6/12">
+                  <div className="mx-auto flex">
                     <Image
                       src="/static/img/mailtimeai-logo.svg"
                       width={298}
@@ -118,7 +123,7 @@ const Home = () => {
                       height={isDesktop ? 130 : 108}
                       alt="Icon of Email Drafting"
                     ></Image>
-                    <h4 className="font-sans lg:font-inter font-bold text-[1.8rem] lg:text-[2.4rem] leading-[2.3rem] lg:leading-[2.9rem] text-ai-blue">
+                    <h4 className="font-sans text-[1.8rem] font-bold leading-[2.3rem] text-ai-blue lg:font-inter lg:text-[2.4rem] lg:leading-[2.9rem]">
                       Instant AI-powered Email Drafting
                     </h4>
                   </div>
@@ -129,7 +134,7 @@ const Home = () => {
                       height={isDesktop ? 130 : 108}
                       alt="Icon of AI Assistant"
                     ></Image>
-                    <h4 className="font-sans lg:font-inter font-bold text-[1.8rem] lg:text-[2.4rem] leading-[2.3rem] lg:leading-[2.9rem] text-ai-blue">
+                    <h4 className="font-sans text-[1.8rem] font-bold leading-[2.3rem] text-ai-blue lg:font-inter lg:text-[2.4rem] lg:leading-[2.9rem]">
                       Email Protocol-based AI Assistant
                     </h4>
                   </div>
@@ -140,7 +145,7 @@ const Home = () => {
                       height={isDesktop ? 130 : 108}
                       alt="Icon of Personalized Tone and Language"
                     ></Image>
-                    <h4 className="font-sans lg:font-inter font-bold text-[1.8rem] lg:text-[2.4rem] leading-[2.3rem] lg:leading-[2.9rem] text-ai-blue">
+                    <h4 className="font-sans text-[1.8rem] font-bold leading-[2.3rem] text-ai-blue lg:font-inter lg:text-[2.4rem] lg:leading-[2.9rem]">
                       Personalized Tone and Language
                     </h4>
                   </div>
@@ -151,26 +156,26 @@ const Home = () => {
                       height={isDesktop ? 130 : 108}
                       alt="Icon of Unparalleled Speed and Efficiency"
                     ></Image>
-                    <h4 className="font-sans lg:font-inter font-bold text-[1.8rem] lg:text-[2.4rem] leading-[2.3rem] lg:leading-[2.9rem] text-ai-blue">
+                    <h4 className="font-sans text-[1.8rem] font-bold leading-[2.3rem] text-ai-blue lg:font-inter lg:text-[2.4rem] lg:leading-[2.9rem]">
                       Unparalleled Speed and Efficiency
                     </h4>
                   </div>
                 </div>
               </section>
-              <section className="w-full lg:w-10/12 mx-auto my-[3.6rem] lg:my-[4.8rem] px-[3.1rem] lg:px-0">
-                <article className="font-inter text-ai-blue text-justify">
-                  <p className="font-medium text-[1.4rem] lg:text-[2.1rem] my-[1.4rem] lg:my-[1.8rem] leading-[1.8rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
+              <section className="mx-auto my-[3.6rem] w-full px-[3.1rem] lg:my-[4.8rem] lg:w-10/12 lg:px-0">
+                <article className="text-justify font-inter text-ai-blue">
+                  <p className="my-[1.4rem] text-[1.4rem] font-medium leading-[1.8rem] lg:my-[1.8rem] lg:text-[2.1rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
                     Experience the disruptive email messaging experience powered
                     by <b>Generative AI</b>, brought to you by{" "}
                     <a
                       href="https://mdt.io/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="underline underline-offset-4 cursor-pointer"
+                      className="cursor-pointer underline underline-offset-4"
                     >
                       <b>
                         <span className="whitespace-nowrap">
-                          <span className="inline-block relative w-[1.4rem] h-[1.4rem] lg:w-[2.1rem] lg:h-[2.1rem] align-sub">
+                          <span className="relative inline-block h-[1.4rem] w-[1.4rem] align-sub lg:h-[2.1rem] lg:w-[2.1rem]">
                             <Image
                               src="/static/img/mdt-icon.svg"
                               alt="The icon of Measurable Data Token(MDT)"
@@ -185,24 +190,24 @@ const Home = () => {
                     .
                   </p>
 
-                  <p className="font-medium text-[1.4rem] lg:text-[2.1rem] my-[1.4rem] lg:my-[1.8rem] leading-[1.8rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
+                  <p className="my-[1.4rem] text-[1.4rem] font-medium leading-[1.8rem] lg:my-[1.8rem] lg:text-[2.1rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
                     Manage your emails like never before. By providing relevant
                     and accurate suggestions, you can automatically draft email
                     replies and get back to what&apos;s important with MailTime
                     AI.
                   </p>
-                  <p className="font-medium text-[1.4rem] lg:text-[2.1rem] my-[1.4rem] lg:my-[1.8rem] leading-[1.8rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
+                  <p className="my-[1.4rem] text-[1.4rem] font-medium leading-[1.8rem] lg:my-[1.8rem] lg:text-[2.1rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
                     MailTime AI whitelist is free for a limited time, so
                     don&apos;t miss out on this opportunity to get early access
                     to our Generative AI-powered email reply drafts (before
                     it&apos;s full!).
                   </p>
-                  <p className="font-medium text-[1.4rem] lg:text-[2.1rem] my-[1.4rem] lg:my-[1.8rem] leading-[1.8rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
+                  <p className="my-[1.4rem] text-[1.4rem] font-medium leading-[1.8rem] lg:my-[1.8rem] lg:text-[2.1rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
                     During priority access phase, each user will also be
                     airdropped a limited number of MDT to experience MailTime
                     AI.
                   </p>
-                  <p className="font-medium text-[1.4rem] lg:text-[2.1rem] my-[1.4rem] lg:my-[1.8rem] leading-[1.8rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
+                  <p className="my-[1.4rem] text-[1.4rem] font-medium leading-[1.8rem] lg:my-[1.8rem] lg:text-[2.1rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
                     Simply click the <b>“Join Whitelist”</b> button to receive a
                     confirmation email with further instructions.
                   </p>
@@ -212,9 +217,9 @@ const Home = () => {
           )}
 
           {registeredInQuery && (
-            <section className="w-full lg:w-10/12 mx-auto my-0 px-[3.1rem] lg:px-0">
-              <article className="font-inter text-ai-blue text-justify">
-                <p className="font-medium text-[1.4rem] lg:text-[2.1rem] my-[1.4rem] lg:my-[1.8rem] leading-[1.8rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
+            <section className="mx-auto my-0 w-full px-[3.1rem] lg:w-10/12 lg:px-0">
+              <article className="text-justify font-inter text-ai-blue">
+                <p className="my-[1.4rem] text-[1.4rem] font-medium leading-[1.8rem] lg:my-[1.8rem] lg:text-[2.1rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
                   Be among the first to experience the power of MailTime AI!
                   Sign up for our whitelist and get early access to our
                   Generative AI-powered email reply drafts (before it’s full!).
@@ -231,27 +236,27 @@ const Home = () => {
           {!emailInQuery && <MailchimpSignupForm />}
 
           {!emailInQuery && (
-            <section className="w-full lg:w-10/12 mx-auto px-[3.5rem] lg:px-0">
-              <h3 className="font-sans font-bold text-[3.6rem] leading-[4.5rem] text-ai-blue my-[3.2rem] lg:my-[4.4rem]">
+            <section className="mx-auto w-full px-[3.5rem] lg:w-10/12 lg:px-0">
+              <h3 className="my-[3.2rem] font-sans text-[3.6rem] font-bold leading-[4.5rem] text-ai-blue lg:my-[4.4rem]">
                 How to Whitelist
               </h3>
-              <p className="font-inter font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] tracking-normal lg:tracking-[0.02em] text-ai-blue text-justify">
+              <p className="text-justify font-inter text-[1.4rem] font-medium leading-[1.8rem] tracking-normal text-ai-blue lg:text-[2.1rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
                 The MailTime AI whitelist is available exclusively for MailTime
                 users. As a MailTime user, you can sign up for the whitelist by
                 simply opening the app and clicking “Activate MailTime AI” on
                 the side menu to get exclusive early access to this new feature.
               </p>
-              <p className="font-inter font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] tracking-normal lg:tracking-[0.02em] text-ai-blue text-center my-[4.4rem]">
+              <p className="my-[4.4rem] text-center font-inter text-[1.4rem] font-medium leading-[1.8rem] tracking-normal text-ai-blue lg:text-[2.1rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
                 We&apos;ll be in touch with more information soon.
               </p>
             </section>
           )}
           {emailInQuery && (
-            <section className="w-full lg:w-10/12 mx-auto px-[3.5rem] lg:px-0">
-              <p className="font-inter font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] tracking-normal lg:tracking-[0.02em] text-ai-blue text-center my-[2rem]">
+            <section className="mx-auto w-full px-[3.5rem] lg:w-10/12 lg:px-0">
+              <p className="my-[2rem] text-center font-inter text-[1.4rem] font-medium leading-[1.8rem] tracking-normal text-ai-blue lg:text-[2.1rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
                 We&apos;ll be in touch with more information soon.
               </p>
-              <p className="font-inter font-medium text-[1.4rem] lg:text-[2.1rem] leading-[1.8rem] lg:leading-[2.8rem] tracking-normal lg:tracking-[0.02em] text-ai-blue text-center my-[2rem]">
+              <p className="my-[2rem] text-center font-inter text-[1.4rem] font-medium leading-[1.8rem] tracking-normal text-ai-blue lg:text-[2.1rem] lg:leading-[2.8rem] lg:tracking-[0.02em]">
                 If you have any inquiries, please contact support@mailtime.com
               </p>
             </section>

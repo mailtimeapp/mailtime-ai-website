@@ -5,7 +5,7 @@ export default function JoinWhitelistButton({
 }) {
   return (
     <button
-      className={`${className} w-min text-white py-6 px-14 rounded-full font-inter text-[1.8rem] font-semibold tracking-[0.16em] uppercase whitespace-nowrap  transition ${
+      className={`${className} w-min whitespace-nowrap rounded-full px-14 py-6 font-inter text-[1.8rem] font-semibold uppercase tracking-[0.16em] text-white  transition ${
         isEnabled
           ? "bg-ai-blue opacity-100 shadow-ai-button hover:brightness-125 active:brightness-90"
           : "bg-ai-l-blue opacity-50"
@@ -13,7 +13,7 @@ export default function JoinWhitelistButton({
       disabled={!isEnabled}
       onClick={onClick}
     >
-      Join Whitelist
+      Download MailTime
     </button>
   );
 }

@@ -86,11 +86,9 @@ const Home = () => {
                   priority
                 />
               </div>
-              {!registeredInQuery && (
-                <Link href="#join-whitelist" passHref>
-                  <JoinWhitelistButton className="mx-auto mt-[11.3rem] block lg:ml-auto lg:mr-0 lg:mt-24"></JoinWhitelistButton>
-                </Link>
-              )}
+              <Link href="#download-mailtime" passHref>
+                <JoinWhitelistButton className="mx-auto mt-[11.3rem] block lg:ml-auto lg:mr-0 lg:mt-24"></JoinWhitelistButton>
+              </Link>
             </div>
           </section>
           {!registeredInQuery && (
@@ -261,6 +259,43 @@ const Home = () => {
               </p>
             </section>
           )}
+
+          <section
+            className="mx-auto w-full px-[3.5rem] lg:w-10/12 lg:px-0"
+            id="download-mailtime"
+          >
+            <h3 className="my-[3.2rem] text-center font-sans text-[3.6rem] font-bold leading-[4.5rem] text-ai-blue lg:my-[4.4rem]">
+              Download MailTime <br /> Enjoy MailTime AI Today!
+            </h3>
+            <div className="flex flex-row justify-center space-x-6">
+              <a
+                href="https://itunes.apple.com/app/id914281815"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-[200px]"
+              >
+                <Image
+                  src="/static/img/app-store-badge.png"
+                  alt="Download MailTime on the App Store"
+                  width={405}
+                  height={120}
+                />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.mailtime.android"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-[200px]"
+              >
+                <Image
+                  src="/static/img/google-play-badge.png"
+                  alt="Get MailTime on Google Play"
+                  width={405}
+                  height={120}
+                />
+              </a>
+            </div>
+          </section>
         </div>
       </div>
 

@@ -55,7 +55,7 @@ const Home = () => {
       </Head>
       <div className="mx-auto min-h-screen w-full overflow-x-hidden bg-no-repeat">
         <Navbar />
-        <div className="mx-auto w-full pb-[17.5rem] pt-[10.7rem] lg:w-[70%] lg:pb-[23.4rem] lg:pt-[12.2rem] 2xl:w-[100rem]">
+        <div className="mx-auto w-full pt-[10.7rem] lg:w-[70%] lg:pt-[12.2rem] 2xl:w-[100rem]">
           <section className="mb-[4.3rem] lg:mb-32">
             <div className="mx-auto w-10/12">
               <div className="relative hidden h-auto w-full lg:block">
@@ -187,21 +187,18 @@ const Home = () => {
             </article>
           </section>
 
-          <section className="mx-auto w-full px-[3.5rem] lg:w-10/12 lg:px-0">
+          <section className="mx-auto my-48 w-full px-[3.5rem] lg:w-10/12 lg:px-0">
             <iframe
-              width="560"
-              height="560"
               src="https://www.youtube.com/embed/vFxTFPmOi1E?controls=0"
               title="YouTube video player"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
-              className="mx-auto rounded-[24px] shadow-2xl"
+              className="mx-auto aspect-square w-full rounded-[24px] shadow-2xl lg:w-10/12"
             ></iframe>
           </section>
 
           <section
-            className="mx-auto w-full px-[3.5rem] lg:w-10/12 lg:px-0"
+            className="mx-auto my-32 w-full px-[3.5rem] lg:w-10/12 lg:px-0"
             id="download-mailtime"
           >
             <h3 className="my-[3.2rem] text-center font-sans text-[3.6rem] font-bold leading-[4.5rem] text-ai-blue lg:my-[4.4rem]">

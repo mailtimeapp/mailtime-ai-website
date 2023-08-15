@@ -6,14 +6,19 @@ const FaqAccordionItem = ({ children, icon, title, onClick, ...props }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div {...props}>
+    <div
+      className={`box-border w-full overflow-hidden rounded-[2.6rem] border transition ${
+        isActive ? "border-[#334155]" : "border-[#F1F5F9]"
+      }`}
+      {...props}
+    >
       <button
         onClick={() => setIsActive(!isActive)}
-        className={`flex flex-row items-center space-x-[1.6rem] rounded-[2.4rem]  p-[1.6rem] text-[1.4rem] font-bold transition ${
+        className={`flex w-full flex-row items-center space-x-[1.6rem] rounded-[2.4rem]  p-[1.6rem] text-[1.4rem] font-bold transition ${
           isActive ? "bg-[#334155] text-white" : "bg-[#F1F5F9] text-[#334155]"
         }`}
       >
-        <span>
+        <span className="shrink-0">
           <Image
             src={`/static/img/faq/faq_icon-${icon}${
               isActive ? "-inverted" : ""
@@ -23,7 +28,7 @@ const FaqAccordionItem = ({ children, icon, title, onClick, ...props }) => {
             height={24}
           />
         </span>
-        <span>{title}</span>
+        <span className="w-full text-left">{title}</span>
         <span>
           <IconExpandMore
             className={`transform transition ${
@@ -34,7 +39,19 @@ const FaqAccordionItem = ({ children, icon, title, onClick, ...props }) => {
           />
         </span>
       </button>
-      {isActive && <div>{children}</div>}
+      <div
+        className={`transition-[grid-template-rows margin] grid overflow-hidden duration-200 ${
+          isActive ? "grid-rows-[1fr]" : "grid-rows-[0fr] "
+        }`}
+      >
+        <div
+          className={`overflow-hidden px-[1.6rem] transition-[padding] ${
+            isActive ? "py-[1.6rem]" : "py-0"
+          }`}
+        >
+          {children}
+        </div>
+      </div>
     </div>
   );
 };

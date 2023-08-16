@@ -45,7 +45,7 @@ const FaqAccordionItem = ({ children, icon, title, onClick, ...props }) => {
         }`}
       >
         <div
-          className={`overflow-hidden px-[1.6rem] transition-[padding] ${
+          className={`overflow-hidden px-[1.6rem] text-[1.4rem] leading-normal text-[#334155] transition-[padding] ${
             isActive ? "py-[1.6rem]" : "py-0"
           }`}
         >

@@ -208,7 +208,7 @@ const FaqList = [
 const Faq = () => {
   return (
     <div className="px-[1.6rem] pb-[2.4rem] pt-[0.8rem]">
-      <div className="mx-auto max-w-[65ch]">
+      <div className="mx-auto max-w-[60rem]">
         <FaqAccordion>
           {FaqList.map((faq, id) => (
             <FaqAccordionItem title={faq.title} icon={faq.icon} key={id}>

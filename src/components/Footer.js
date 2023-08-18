@@ -18,8 +18,8 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <span
-                className="font-inter text-footer-grey hover:text-white 
-                         text-[1.6rem] font-normal leading-[2.2rem] cursor-pointer"
+                className="cursor-pointer font-inter text-[1.6rem] 
+                         font-normal leading-[2.2rem] text-footer-grey hover:text-white"
               >
                 Mission
               </span>
@@ -32,8 +32,8 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <span
-                className="font-inter text-footer-grey hover:text-white 
-                         text-[1.6rem] font-normal leading-[2.2rem] cursor-pointer"
+                className="cursor-pointer font-inter text-[1.6rem] 
+                         font-normal leading-[2.2rem] text-footer-grey hover:text-white"
               >
                 Career
               </span>
@@ -46,8 +46,8 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <span
-                className="font-inter text-footer-grey hover:text-white 
-                         text-[1.6rem] font-normal leading-[2.2rem] cursor-pointer"
+                className="cursor-pointer font-inter text-[1.6rem] 
+                         font-normal leading-[2.2rem] text-footer-grey hover:text-white"
               >
                 Contact Us
               </span>
@@ -67,8 +67,8 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <span
-                className="font-inter text-footer-grey hover:text-white 
-                         text-[1.6rem] font-normal leading-[2.2rem] cursor-pointer"
+                className="cursor-pointer font-inter text-[1.6rem] 
+                         font-normal leading-[2.2rem] text-footer-grey hover:text-white"
               >
                 FAQ
               </span>
@@ -81,8 +81,8 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <span
-                className="font-inter text-footer-grey hover:text-white 
-                         text-[1.6rem] font-normal leading-[2.2rem] cursor-pointer"
+                className="cursor-pointer font-inter text-[1.6rem] 
+                         font-normal leading-[2.2rem] text-footer-grey hover:text-white"
               >
                 Feedback
               </span>
@@ -102,8 +102,8 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <span
-                className="font-inter text-footer-grey hover:text-white 
-                         text-[1.6rem] font-normal leading-[2.2rem] cursor-pointer"
+                className="cursor-pointer font-inter text-[1.6rem] 
+                         font-normal leading-[2.2rem] text-footer-grey hover:text-white"
               >
                 Terms of Use
               </span>
@@ -116,8 +116,8 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <span
-                className="font-inter text-footer-grey hover:text-white 
-                         text-[1.6rem] font-normal leading-[2.2rem] cursor-pointer"
+                className="cursor-pointer font-inter text-[1.6rem] 
+                         font-normal leading-[2.2rem] text-footer-grey hover:text-white"
               >
                 Privacy Policy
               </span>
@@ -130,8 +130,8 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <span
-                className="font-inter text-footer-grey hover:text-white 
-                         text-[1.6rem] font-normal leading-[2.2rem] cursor-pointer"
+                className="cursor-pointer font-inter text-[1.6rem] 
+                         font-normal leading-[2.2rem] text-footer-grey hover:text-white"
               >
                 Do Not Sell My Personal Information (California Residents)
               </span>
@@ -144,19 +144,19 @@ const Footer = () => {
 
   return (
     <footer
-      className="flex justify-center bottom-0 flex-wrap 
-                 w-full lg:h-[42.8rem] h-max z-10
-                 bg-[url('/static/img/footer_bg.svg')] bg-top bg-no-repeat 
-                 mr-0 ml-0 bg-cover -mt-[9.5rem]"
+      className="bottom-0 z-10 ml-0 mr-0 
+                 flex h-max w-full flex-wrap
+                 justify-center bg-[url('/static/img/footer_bg.svg')] bg-cover 
+                 bg-top bg-no-repeat lg:h-[42.8rem]"
     >
       <div
-        className=" 2xl:w-[120rem] lg:w-[80%] w-full 
-                      grid lg:grid-cols-6 grid-cols-1 gap-4
-                      mt-40 pt-20 px-[2rem]
-                      align-top justify-between"
+        className=" mt-40 grid w-full 
+                      grid-cols-1 justify-between gap-4 px-[2rem]
+                      pt-20 align-top lg:w-[80%]
+                      lg:grid-cols-6 2xl:w-[120rem]"
       >
-        <div className="lg:col-span-3 col-span-1">
-          <div className="lg:h-[3.6rem] h-[2.5rem] w-full relative">
+        <div className="col-span-1 lg:col-span-3">
+          <div className="relative h-[2.5rem] w-full lg:h-[3.6rem]">
             <Image
               src="/static/img/mailtime_logo_full.svg"
               alt="The logo of MailTime"
@@ -167,13 +167,13 @@ const Footer = () => {
           </div>
           <div className="mt-8 w-full">
             <span
-              className="font-inter font-[300] text-white 
-                             lg:text-[1.8rem] text-[1.6rem] "
+              className="font-inter text-[1.6rem] font-[300] 
+                             text-white lg:text-[1.8rem] "
             >
               MailTime Inc.
             </span>
             <br />
-            <div className="pt-5 flex align-center space-x-3">
+            <div className="align-center flex space-x-3 pt-5">
               <div className="w-[2.4rem]">
                 <Image
                   src="/static/img/Mail.svg"
@@ -185,14 +185,14 @@ const Footer = () => {
               <div className="w-fit">
                 <a
                   href="mailto:support@mailtime.com"
-                  className="font-inter text-footer-grey hover:text-white 
-                              lg:text-[1.8rem] text-[1.6rem] font-normal cursor-pointer"
+                  className="cursor-pointer font-inter text-[1.6rem] 
+                              font-normal text-footer-grey hover:text-white lg:text-[1.8rem]"
                 >
                   support@mailtime.com
                 </a>
               </div>
             </div>
-            <div className="pt-5 w-full flex align-center space-x-3">
+            <div className="align-center flex w-full space-x-3 pt-5">
               <div className="w-[2.4rem]">
                 <Image
                   src="/static/img/Map-pin.svg"
@@ -203,14 +203,14 @@ const Footer = () => {
               </div>
               <div className="w-fit">
                 <span
-                  className="font-inter text-footer-grey 
-                                  lg:text-[1.8rem] text-[1.6rem] font-normal"
+                  className="font-inter text-[1.6rem] 
+                                  font-normal text-footer-grey lg:text-[1.8rem]"
                 >
                   66 Shanghai St, Yau Ma Tei, Kowloon, Hong Kong
                 </span>
               </div>
             </div>
-            <div className="pt-5 flex align-center space-x-3">
+            <div className="align-center flex space-x-3 pt-5">
               <div className="w-[2.4rem]">
                 <Image
                   src="/static/img/twitter.svg"
@@ -221,8 +221,8 @@ const Footer = () => {
               </div>
               <div className="w-fit">
                 <span
-                  className="font-inter text-footer-grey 
-                                  lg:text-[1.8rem] text-[1.6rem] font-normal"
+                  className="font-inter text-[1.6rem] 
+                                  font-normal text-footer-grey lg:text-[1.8rem]"
                 >
                   @MailTimeApp
                 </span>
@@ -230,9 +230,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-1 lg:block hidden">
+        <div className="col-span-1 hidden lg:block">
           <div className="h-[5rem]">
-            <span className="font-inter text-white text-[1.8rem] font-bold">
+            <span className="font-inter text-[1.8rem] font-bold text-white">
               About
             </span>
           </div>
@@ -243,8 +243,8 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <span
-                className="font-inter text-footer-grey hover:text-white 
-                            text-[1.8rem] font-normal cursor-pointer"
+                className="cursor-pointer font-inter text-[1.8rem] 
+                            font-normal text-footer-grey hover:text-white"
               >
                 Mission
               </span>
@@ -257,8 +257,8 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <span
-                className="font-inter text-footer-grey hover:text-white 
-                               text-[1.8rem] font-normal cursor-pointer"
+                className="cursor-pointer font-inter text-[1.8rem] 
+                               font-normal text-footer-grey hover:text-white"
               >
                 Career
               </span>
@@ -271,17 +271,17 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <span
-                className="font-inter text-footer-grey hover:text-white 
-                            text-[1.8rem] font-normal cursor-pointer"
+                className="cursor-pointer font-inter text-[1.8rem] 
+                            font-normal text-footer-grey hover:text-white"
               >
                 Contact Us
               </span>
             </a>
           </div>
         </div>
-        <div className="col-span-1 lg:block hidden">
+        <div className="col-span-1 hidden lg:block">
           <div className="h-[5rem]">
-            <span className="font-inter text-white text-[1.8rem] font-bold">
+            <span className="font-inter text-[1.8rem] font-bold text-white">
               Help Centre
             </span>
           </div>
@@ -292,8 +292,8 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <span
-                className="font-inter text-footer-grey hover:text-white 
-                            text-[1.8rem] font-normal cursor-pointer"
+                className="cursor-pointer font-inter text-[1.8rem] 
+                            font-normal text-footer-grey hover:text-white"
               >
                 FAQ
               </span>
@@ -304,28 +304,28 @@ const Footer = () => {
               href="https://support.mailtime.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-inter text-footer-grey hover:text-white 
-                            text-[1.8rem] font-normal cursor-pointer"
+              className="cursor-pointer font-inter text-[1.8rem] 
+                            font-normal text-footer-grey hover:text-white"
             >
               Feedback
             </a>
           </div>
         </div>
-        <div className="col-span-1 lg:block hidden">
+        <div className="col-span-1 hidden lg:block">
           <div className="h-[5rem]">
-            <span className="font-inter text-white text-[1.8rem] font-bold">
+            <span className="font-inter text-[1.8rem] font-bold text-white">
               Legal & privacy
             </span>
           </div>
-          <div className="pt-5 w-full">
+          <div className="w-full pt-5">
             <a
               href="https://mailtime.com/terms"
               target="_blank"
               rel="noopener noreferrer"
             >
               <span
-                className="font-inter text-footer-grey hover:text-white 
-                                text-[1.8rem] font-normal cursor-pointer"
+                className="cursor-pointer font-inter text-[1.8rem] 
+                                font-normal text-footer-grey hover:text-white"
               >
                 Terms of Use
               </span>
@@ -338,36 +338,36 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <span
-                className="font-inter text-footer-grey hover:text-white 
-                                text-[1.8rem] font-normal cursor-pointer"
+                className="cursor-pointer font-inter text-[1.8rem] 
+                                font-normal text-footer-grey hover:text-white"
               >
                 Privacy Policy
               </span>
             </a>
           </div>
-          <div className="pt-5 block">
+          <div className="block pt-5">
             <a
               href="https://mailtime.com/do-not-sell-my-personal-information"
               target="_blank"
               rel="noopener noreferrer"
             >
               <span
-                className="font-inter text-footer-grey hover:text-white 
-                                text-[1.8rem] font-normal leading-[2.2rem] cursor-pointer"
+                className="cursor-pointer font-inter text-[1.8rem] 
+                                font-normal leading-[2.2rem] text-footer-grey hover:text-white"
               >
                 Do Not Sell My Personal Information (California Residents)
               </span>
             </a>
           </div>
         </div>
-        <div className="col-span-1 lg:hidden block mt-[3rem]">
+        <div className="col-span-1 mt-[3rem] block lg:hidden">
           <Accordion items={accordionItems} page="footer"></Accordion>
         </div>
       </div>
-      <div className="w-[100vw] bg-ai-blue flex justify-center">
-        <div className="2xl:w-[120rem] lg:w-[80%] w-full py-[2rem] bg-ai-blue">
-          <hr className="border-1 border-white border-solid" />
-          <div className="mt-5 lg:text-left text-center px-[1rem]">
+      <div className="flex w-[100vw] justify-center bg-ai-blue">
+        <div className="w-full bg-ai-blue py-[2rem] lg:w-[80%] 2xl:w-[120rem]">
+          <hr className="border-1 border-solid border-white" />
+          <div className="mt-5 px-[1rem] text-center lg:text-left">
             <span className="text-[1.2rem] text-[#D9DBE1]">
               All Rights Reserved © {new Date().getFullYear()} MailTime
             </span>

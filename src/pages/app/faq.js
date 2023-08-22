@@ -1,6 +1,12 @@
 import Image from "next/image";
 import FaqAccordion from "@/components/Faq/Accordion";
 import FaqAccordionItem from "@/components/Faq/AccordionItem";
+import { isAndroid, isIOS, MobileView, BrowserView } from "react-device-detect";
+import NoSSR from "@/components/Helper/NoSSR";
+
+const AndroidUnsubscribeUrl =
+  "https://play.google.com/store/account/subscriptions?";
+const IOSUnsubscribeUrl = "https://apps.apple.com/account/subscriptions";
 
 const FaqList = [
   {
@@ -194,12 +200,25 @@ const FaqList = [
           We recommend that you review the subscription terms and cancel if
           needed, to avoid any unwanted charges.
         </p>
-        <a
-          href="#!"
-          className="mx-auto mt-[2.1rem] block w-max rounded-lg bg-[#FFEDED] p-2 font-semibold text-[#FF5656] active:bg-[#ffdbdb]"
-        >
-          Unsubscribe MailTime AI Unlimited
-        </a>
+        <NoSSR>
+          <MobileView>
+            {(isAndroid || isIOS) && (
+              <a
+                href={isAndroid ? AndroidUnsubscribeUrl : IOSUnsubscribeUrl}
+                className="mx-auto mt-[2.1rem] block w-max rounded-lg bg-[#FFEDED] p-2 font-semibold text-[#FF5656] active:bg-[#ffdbdb]"
+              >
+                Unsubscribe MailTime AI Unlimited
+              </a>
+            )}
+          </MobileView>
+          <BrowserView>
+            {!isAndroid && !isIOS && (
+              <div className="mx-auto mt-[2.1rem] block w-max rounded-lg bg-gray-200 p-2 font-semibold text-gray-500">
+                Please open this page on an iOS or Android device
+              </div>
+            )}
+          </BrowserView>
+        </NoSSR>
       </>
     ),
   },

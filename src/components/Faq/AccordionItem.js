@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-import IconExpandMore from "../Icon/ExpandMore";
+import IconExpandMore from "../Icons/ExpandMore";
 
 const FaqAccordionItem = ({ children, icon, title, onClick, ...props }) => {
   const [isActive, setIsActive] = useState(false);

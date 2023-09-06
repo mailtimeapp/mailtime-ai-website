@@ -7,17 +7,8 @@ const TermsAndConditionsPage = () => {
             <b>Measurable Data Token (MDT)</b>
           </h2>
           <p className="my-8">
-            The{" "}
-            <a
-              href="https://mdt.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-2"
-            >
-              <b>Measurable Data Token (MDT)</b>
-            </a>{" "}
-            provided during the priority access phase is designed to be
-            restricted and managed in a centralised way.{" "}
+            The <b>MDT</b> provided during the priority access phase is designed
+            to be restricted and managed in a centralised way.{" "}
             <b>It is intended solely for use within the MailTime AI system.</b>{" "}
             This provision does not constitute a financial investment, security,
             share, equity, or any form of financial or investment instrument.The
@@ -130,6 +121,106 @@ const TermsAndConditionsPage = () => {
             MailTime AI Credits and subscription services. By using these
             services, you agree to be bound by these terms and conditions.
           </p>
+
+          <h2 className="my-8 underline underline-offset-2">
+            <b>
+              MailTime AI Unlimited - <br />
+              Monthly/Yearly Subscriptions
+            </b>
+          </h2>
+
+          <p className="my-8">
+            Certain functionalities of MailTime require payment before you can
+            use them (&ldquo;Subscriptions&rdquo;). Subscriptions can be
+            purchased by paying an annual or monthly subscription fee.
+            Subscription fees are charged at the beginning of the subscription
+            and, such subscription renews automatically for an additional period
+            equal in length to the expiring subscription term until you cancel
+            it.
+          </p>
+          <p className="my-8">
+            We reserve the right to change the pricing structure for our
+            Subscriptions. When we do that, we tend to exempt existing
+            subscribers from those changes. If we need to change the prices for
+            existing subscribers, we will give at least 30 days notice and will
+            notify you via the email address used to create your MailTime
+            Account or by posting a notice about changes on our App and Website
+            themselves. Your continued use of the App after the price change
+            becomes effective constitutes your agreement to pay the changed
+            amount. MailTime offers two types of MailTime AI Unlimited
+            subscriptions: Monthly and Yearly. If you need help regarding the
+            subscription plans please contact us at{" "}
+            <a href="mailto:support@mailtime.com" className="underline">
+              support@mailtime.com
+            </a>
+            .
+          </p>
+
+          <h2 className="my-8 underline underline-offset-2">
+            <b>Payments</b>
+          </h2>
+          <p className="my-8">
+            MailTime provides you with the option to pay for the subscription
+            through in-app payments at App Store and Google Play.
+          </p>
+          <p className="my-8">
+            If you purchase the subscription through the in-app purchase, then
+            the app market’s in-app purchase rules and policies will also apply.
+          </p>
+          <p className="my-8">
+            The subscription bought is only available for the linked email
+            account. We reserve the right to revise the subscription fees at any
+            time, subject to providing users with adequate notice of any fee
+            changes before they become effective. The revised fees will not
+            apply to your current subscription period, however, your continued
+            use after the effective date of such change will constitute your
+            agreement to pay the updated fees.
+          </p>
+          <p className="my-8">
+            PLEASE NOTE, if your local currency is different from the currency
+            in which the prices are quoted, your bank will apply the exchange
+            rate applicable per the date of purchase, which is beyond our
+            control. Also, your bank may apply an exchange commission or fee.
+          </p>
+          <p className="my-8">
+            PLEASE ALSO NOTE that the subscription fee is inclusive of
+            applicable value added tax (&ldquo;VAT&rdquo;) and/or other taxes
+            which are imposed under the relevant tax laws. The VAT and/or other
+            tax charge will depend on your location. When you get to the final
+            stage of the checkout, App Store/Play Store will show the tax
+            component of the subscription fee for your information.
+          </p>
+
+          <h2 className="my-8 underline underline-offset-2">
+            <b>Subscription Renewal and Cancellation</b>
+          </h2>
+          <p className="my-8">
+            The subscription will automatically renew for a subsequent term
+            unless you cancel it in App Store/Play Store. You may cancel your
+            subscription at any time. Upon cancellation, your subscription will
+            last until the expiration date.
+          </p>
+
+          <h2 className="my-8 underline underline-offset-2">
+            <b>Refunds</b>
+          </h2>
+          <p className="my-8">
+            All paid subscription fees are non-refundable unless otherwise
+            agreed with MailTime in writing. If you have any problems with the
+            app functioning, please contact our support team at{" "}
+            <a href="mailto:support@mailtime.com" className="underline">
+              support@mailtime.com
+            </a>
+            .
+          </p>
+          <p className="my-8">
+            For any purchases made through third-party app markets (Apple’s App
+            Store, Google Play, etc.), please contact their customer support.
+            Their terms, conditions and policies, and not ours, apply and we do
+            not handle returns or refund requests for purchases through those
+            third-party platform providers.
+          </p>
+          <p className="my-8"></p>
         </article>
       </div>
     </div>

@@ -2,11 +2,12 @@ import Image from "next/image";
 import { useState } from "react";
 import IconExpandMore from "../Icons/ExpandMore";
 
-const FaqAccordionItem = ({ children, icon, title, onClick, ...props }) => {
+const FaqAccordionItem = ({ children, icon, title, onClick, id, ...props }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
     <div
+      id={id}
       className={`box-border w-full overflow-hidden rounded-[2.6rem] border transition ${
         isActive ? "border-[#334155]" : "border-[#F1F5F9]"
       }`}

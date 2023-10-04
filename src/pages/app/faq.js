@@ -12,6 +12,7 @@ const FaqList = [
   {
     title: "What is MailTime AI?",
     icon: "mailtime_ai",
+    id: "what-is-mailtime-ai",
     content: (
       <p>
         Developed by{" "}
@@ -33,6 +34,7 @@ const FaqList = [
   {
     title: "How does MailTime AI work?",
     icon: "mailtime_ai",
+    id: "how-mailtime-ai-work",
     content: (
       <div className="grid gap-[2.4rem] pb-[0.8rem]">
         <div className="grid grid-cols-[2.4rem_auto] gap-[1.6rem]">
@@ -88,6 +90,7 @@ const FaqList = [
   {
     title: "What is MailTime AI Unlimited?",
     icon: "mailtime_ai_unlimited",
+    id: "what-is-mailtime-ai-unlimited",
     content: (
       <>
         <p>
@@ -116,6 +119,7 @@ const FaqList = [
   {
     title: "What is Measurable Data Token?",
     icon: "mdt",
+    id: "what-is-mdt",
     content: (
       <>
         <p>
@@ -137,14 +141,20 @@ const FaqList = [
           financial or investment instrument.
         </p>
         <p className="mt-[2.1rem]">
-          Upon activation of MailTime AI, users will receive an initial
-          allocation of <b>10 MDTs</b>. If a user exhausts their balance, they
-          will receive <b>10 token per day</b> for further use.{" "}
-          <b>The maximum token balance for the daily refresh is 10.</b> Such
-          MDTs can not be withdrawn, redeemed, transferred, or used in any other
-          use cases at any point. Any MDT balance in the user&apos;s MailTime
-          accounts can be reclaimed by Measurable Foundation Limited and its
-          affiliates, at its discretion.
+          <b>
+            Upon activation of MailTime AI, users will receive an initial
+            allocation of 2 MDTs.
+          </b>{" "}
+          When users exhaust their balance, they can continue their use either
+          through purchasing MailTime AI Credits, or become a tiered member of
+          our RewardMe app (see FAQ “
+          <a
+            href="#rewardme-privileges"
+            className="underline underline-offset-4"
+          >
+            What are the exclusive RewardMe privileges?
+          </a>
+          ” for more details).
         </p>
       </>
     ),
@@ -152,6 +162,7 @@ const FaqList = [
   {
     title: "How to unsubscribe from MailTime AI Unlimited?",
     icon: "mailtime_ai_unlimited",
+    id: "unsubscribe",
     content: (
       <>
         <p>
@@ -198,6 +209,7 @@ const FaqList = [
   {
     title: "What is RewardMe?",
     icon: "rewardme",
+    id: "what-is-rewardme",
     content: (
       <>
         <p>
@@ -225,6 +237,7 @@ const FaqList = [
   {
     title: "What are the exclusive RewardMe privileges?",
     icon: "rewardme",
+    id: "rewardme-privileges",
     content: (
       <>
         <p>
@@ -283,6 +296,7 @@ const FaqList = [
   {
     title: "How do I claim my RewardMe membership exclusive privileges?",
     icon: "rewardme",
+    id: "claim-rewardme-privileges",
     content: (
       <>
         <p></p>
@@ -296,8 +310,13 @@ const Faq = () => {
     <div className="px-[1.6rem] pb-[2.4rem] pt-[0.8rem]">
       <div className="mx-auto max-w-[60rem]">
         <FaqAccordion>
-          {FaqList.map((faq, id) => (
-            <FaqAccordionItem title={faq.title} icon={faq.icon} key={id}>
+          {FaqList.map((faq, index) => (
+            <FaqAccordionItem
+              title={faq.title}
+              icon={faq.icon}
+              id={faq.id}
+              key={index}
+            >
               {faq.content}
             </FaqAccordionItem>
           ))}

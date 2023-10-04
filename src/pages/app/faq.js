@@ -12,6 +12,7 @@ const FaqList = [
   {
     title: "What is MailTime AI?",
     icon: "mailtime_ai",
+    id: "what-is-mailtime-ai",
     content: (
       <p>
         Developed by{" "}
@@ -33,6 +34,7 @@ const FaqList = [
   {
     title: "How does MailTime AI work?",
     icon: "mailtime_ai",
+    id: "how-mailtime-ai-work",
     content: (
       <div className="grid gap-[2.4rem] pb-[0.8rem]">
         <div className="grid grid-cols-[2.4rem_auto] gap-[1.6rem]">
@@ -88,6 +90,7 @@ const FaqList = [
   {
     title: "What is MailTime AI Unlimited?",
     icon: "mailtime_ai_unlimited",
+    id: "what-is-mailtime-ai-unlimited",
     content: (
       <>
         <p>
@@ -114,35 +117,9 @@ const FaqList = [
     ),
   },
   {
-    title: "What is RewardMe?",
-    icon: "rewardme",
-    content: (
-      <>
-        <p>
-          <a
-            href="https://reward.me/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline underline-offset-4"
-          >
-            <b>RewardMe</b>
-          </a>{" "}
-          is an innovative reward app that automatically earns you rewards as
-          you spend at your favourite merchants. Simply bind your email account
-          and you will automatically get rewarded on eligible purchases in gift
-          cards, or cryptocurrency. The best part about RewardMe is that you get
-          to enjoy extra rewards on top of other reward programs you&apos;ve
-          already signed up for!
-        </p>
-        <p className="mt-[2.1rem]">
-          With RewardMe, Your Every Purchase Counts.
-        </p>
-      </>
-    ),
-  },
-  {
     title: "What is Measurable Data Token?",
     icon: "mdt",
+    id: "what-is-mdt",
     content: (
       <>
         <p>
@@ -164,14 +141,20 @@ const FaqList = [
           financial or investment instrument.
         </p>
         <p className="mt-[2.1rem]">
-          Upon activation of MailTime AI, users will receive an initial
-          allocation of <b>10 MDTs</b>. If a user exhausts their balance, they
-          will receive <b>10 token per day</b> for further use.{" "}
-          <b>The maximum token balance for the daily refresh is 10.</b> Such
-          MDTs can not be withdrawn, redeemed, transferred, or used in any other
-          use cases at any point. Any MDT balance in the user&apos;s MailTime
-          accounts can be reclaimed by Measurable Foundation Limited and its
-          affiliates, at its discretion.
+          <b>
+            Upon activation of MailTime AI, users will receive an initial
+            allocation of 2 MDTs.
+          </b>{" "}
+          When users exhaust their balance, they can continue their use either
+          through purchasing MailTime AI Credits, or become a tiered member of
+          our RewardMe app (see FAQ “
+          <a
+            href="#rewardme-privileges"
+            className="underline underline-offset-4"
+          >
+            What are the exclusive RewardMe privileges?
+          </a>
+          ” for more details).
         </p>
       </>
     ),
@@ -179,6 +162,7 @@ const FaqList = [
   {
     title: "How to unsubscribe from MailTime AI Unlimited?",
     icon: "mailtime_ai_unlimited",
+    id: "unsubscribe",
     content: (
       <>
         <p>
@@ -222,6 +206,143 @@ const FaqList = [
       </>
     ),
   },
+  {
+    title: "What is RewardMe?",
+    icon: "rewardme",
+    id: "what-is-rewardme",
+    content: (
+      <>
+        <p>
+          <a
+            href="https://reward.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4"
+          >
+            <b>RewardMe</b>
+          </a>{" "}
+          is an innovative reward app that automatically earns you rewards as
+          you spend at your favourite merchants. Simply bind your email account
+          and you will automatically get rewarded on eligible purchases in gift
+          cards, or cryptocurrency. The best part about RewardMe is that you get
+          to enjoy extra rewards on top of other reward programs you&apos;ve
+          already signed up for!
+        </p>
+        <p className="mt-[2.1rem]">
+          With RewardMe, Your Every Purchase Counts.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "What are the exclusive RewardMe privileges?",
+    icon: "rewardme",
+    id: "rewardme-privileges",
+    content: (
+      <>
+        <p>
+          Membership in{" "}
+          <a
+            href="https://reward.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4"
+          >
+            <b>RewardMe</b>
+          </a>{" "}
+          offers a range of exclusive benefits to MailTime AI, tailored to each
+          tier level.
+        </p>
+        <p className="mt-[2.1rem]">
+          Lower-tier members enjoy the privilege of receiving daily MDTs to
+          power their usage of MailTime AI, as outlined in the table below.
+          Meanwhile, higher-tier members gain the advantage of unlimited access*
+          to MailTime AI, provided that they maintain their respective tier
+          status.
+        </p>
+        <p className="mt-[2.1rem]">
+          Progressing from the Newbie tier, individuals can advance to
+          &ldquo;Starter&rdquo; and &ldquo;Extra&rdquo; tiers by actively
+          engaging with the RewardMe app, which includes tasks such as daily
+          check-ins and referring friends.
+        </p>
+        <p className="mt-[2.1rem]">
+          To attain the prestigious Elite tier or beyond, members are required
+          to undertake additional activities, such as staking a specified
+          quantity of Measurable Data Tokens.
+        </p>
+        <Image
+          src="/static/img/faq/rewardme-privilege-list.png"
+          alt=""
+          width={343 * 3}
+          height={260 * 3}
+          className="my-8"
+        />
+        <p className="mt-[2.1rem]">
+          For more information, please download the RewardMe app, or visit the{" "}
+          <a
+            href="https://reward.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4"
+          >
+            <b>RewardMe website</b>
+          </a>
+          !
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "How do I claim my RewardMe membership exclusive privileges?",
+    icon: "rewardme",
+    id: "claim-rewardme-privileges",
+    content: (
+      <>
+        <p>
+          To claim you RewardMe membership exclusive MailTime AI privileges is
+          simple, just follow the steps below!
+        </p>
+        <ol className="ml-12 mt-[2.1rem] list-outside">
+          <li className="my-3 list-decimal">
+            Make sure you have joined RewardMe with the email address you intend
+            with using in MailTime.
+          </li>
+          <li className="my-3 list-decimal">
+            Add this email address to MailTime.
+          </li>
+          <li className="my-3 list-decimal">
+            Click into the MailTime AI Wallet page.
+          </li>
+          <li className="my-3 list-decimal">
+            Touch the “Measurable Data Tokens” card.
+          </li>
+          <Image
+            src="/static/img/faq/click-mdt-card.png"
+            alt=""
+            width={1057}
+            height={984}
+            className="mx-auto my-8 -ml-6"
+          />
+          <li className="my-3 list-decimal">
+            Click the “Claim Your Privilege” button on the bottom.
+          </li>
+          <Image
+            src="/static/img/faq/claim-your-rewardme-privilege.png"
+            alt=""
+            width={343 * 3}
+            height={324 * 3}
+            className="mx-auto my-8 -ml-6"
+          />
+          <li className="my-3 list-decimal">
+            Enjoy your exclusive privileges!
+          </li>
+        </ol>
+
+        <p className="mt-[2.1rem]"></p>
+      </>
+    ),
+  },
 ];
 
 const Faq = () => {
@@ -229,8 +350,13 @@ const Faq = () => {
     <div className="px-[1.6rem] pb-[2.4rem] pt-[0.8rem]">
       <div className="mx-auto max-w-[60rem]">
         <FaqAccordion>
-          {FaqList.map((faq, id) => (
-            <FaqAccordionItem title={faq.title} icon={faq.icon} key={id}>
+          {FaqList.map((faq, index) => (
+            <FaqAccordionItem
+              title={faq.title}
+              icon={faq.icon}
+              id={faq.id}
+              key={index}
+            >
               {faq.content}
             </FaqAccordionItem>
           ))}

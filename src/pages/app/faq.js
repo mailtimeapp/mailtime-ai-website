@@ -299,7 +299,47 @@ const FaqList = [
     id: "claim-rewardme-privileges",
     content: (
       <>
-        <p></p>
+        <p>
+          To claim you RewardMe membership exclusive MailTime AI privileges is
+          simple, just follow the steps below!
+        </p>
+        <ol className="ml-12 mt-[2.1rem] list-outside">
+          <li className="my-3 list-decimal">
+            Make sure you have joined RewardMe with the email address you intend
+            with using in MailTime.
+          </li>
+          <li className="my-3 list-decimal">
+            Add this email address to MailTime.
+          </li>
+          <li className="my-3 list-decimal">
+            Click into the MailTime AI Wallet page.
+          </li>
+          <li className="my-3 list-decimal">
+            Touch the “Measurable Data Tokens” card.
+          </li>
+          <Image
+            src="/static/img/faq/click-mdt-card.png"
+            alt=""
+            width={1057}
+            height={984}
+            className="mx-auto my-8 -ml-6"
+          />
+          <li className="my-3 list-decimal">
+            Click the “Claim Your Privilege” button on the bottom.
+          </li>
+          <Image
+            src="/static/img/faq/claim-your-rewardme-privilege.png"
+            alt=""
+            width={343 * 3}
+            height={324 * 3}
+            className="mx-auto my-8 -ml-6"
+          />
+          <li className="my-3 list-decimal">
+            Enjoy your exclusive privileges!
+          </li>
+        </ol>
+
+        <p className="mt-[2.1rem]"></p>
       </>
     ),
   },

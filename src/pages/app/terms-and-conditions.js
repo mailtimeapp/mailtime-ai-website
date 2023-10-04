@@ -20,9 +20,8 @@ const TermsAndConditionsPage = () => {
           <p className="my-8">
             <b>
               It can not be withdrawn, redeemed, transferred, or used in any
-              other use cases of the MDT at any point during or after the
-              priority access phase. Any MDT balance in the user’s MailTime
-              accounts after the conclusion of the priority access phase will be
+              other use cases of the MDT at any point.
+              <br /> Any MDT balance in the user’s MailTime accounts can be
               reclaimed by Measurable Foundation Limited and its affiliates, at
               its discretion.
             </b>
@@ -46,7 +45,7 @@ const TermsAndConditionsPage = () => {
             MailTime AI feature(s) and, if applicable, your{" "}
             <b>MailTime Unlimited</b> Subscription. &ldquo;MailTime AI&rdquo;
             refers to any feature or functionality provided by MailTime and
-            labeled as MailTime AI that utilizes data models trained by machine
+            labeled as MailTime AI that utilises data models trained by machine
             learning.
           </p>
 
@@ -106,6 +105,26 @@ const TermsAndConditionsPage = () => {
               when using MailTime AI Credits and subscription services.
             </li>
             <li className="my-3 list-decimal">
+              All subscriptions purchased through MailTime AI are automatically
+              set to renew on a recurring basis unless the user chooses to
+              unsubscribe or terminate the subscription. Cancellation of
+              subscriptions must be initiated through the designated channels
+              provided by Google Play and the App Store, and the terms and
+              conditions of these platforms apply to such cancellations. Users
+              are advised to review and comply with the specific terms and
+              conditions outlined by Google Play and the App Store when managing
+              their subscription status.
+            </li>
+            <li className="my-3 list-decimal">
+              If a user chooses to purchase credits on RewardMe but later
+              decides to subscribe to a monthly or yearly MailTime AI unlimited
+              plan, the subscription will take precedence over the credit
+              balance. The existing credits will not be consumed or deducted
+              from the user&apos;s account until the subscription is canceled.
+              If the subscription is canceled, the remaining credits will become
+              available for the user to utilise again.
+            </li>
+            <li className="my-3 list-decimal">
               The user agrees to provide accurate and complete information when
               registering for MailTime AI Credits and subscription services, and
               to promptly update such information as necessary.
@@ -123,104 +142,98 @@ const TermsAndConditionsPage = () => {
           </p>
 
           <h2 className="my-8 underline underline-offset-2">
+            <b>RewardMe Exclusive Privileges for MailTime AI</b>
+          </h2>
+
+          <p className="my-8">
+            RewardMe offers different membership tiers, each with its own set of
+            benefits related to MailTime AI.
+          </p>
+          <p className="my-8">
+            Lower-Tier Benefits: Members in lower tiers receive daily Measurable
+            Data Tokens (MDTs) to enhance their usage of MailTime AI. The
+            specific allocation is detailed below.
+          </p>
+
+          <ol className="ml-12 list-outside">
+            <li className="my-3 list-decimal font-bold">
+              Newbie Tier - 2 MDTs, daily refresh, maximum 2 MDTs.
+            </li>
+            <li className="my-3 list-decimal font-bold">
+              Starter Tier - 4 MDTs, daily refresh, maximum 4 MDTs.
+            </li>
+            <li className="my-3 list-decimal font-bold">
+              Extra Tier - 6 MDTs, daily refresh, maximum 6 MDTs.
+            </li>
+          </ol>
+
+          <p className="my-8">
+            Higher-Tier Benefits: Members in higher tiers enjoy unlimited
+            access* to MailTime AI, as long as they maintain their respective
+            tier status. <br />
+            <b>This includes: Elite, Infinite and Infinite Privilege Tiers.</b>
+          </p>
+
+          <p className="my-8">
+            For users who purchased a subscription and then claimed their
+            RewardMe Exclusive Privileges for MailTime AI (applicable for Elite,
+            Infinite and Infinite Privilege Tiers), you agree to the following
+            terms and conditions:
+          </p>
+
+          <ol className="ml-12 list-outside">
+            <li className="my-3 list-decimal">
+              Subscription Renewal: Unless cancelled manually, your purchased
+              subscription will be automatically renewed at the end of each
+              billing cycle. This renewal will occur on top of the existing
+              RewardMe privileges you already have. To avoid unwanted charges,
+              it is your responsibility to cancel/pause the subscription before
+              the renewal date.
+            </li>
+            <li className="my-3 list-decimal">
+              Refunds and Disputes: Refunds or disputes related to the
+              subscription should be addressed directly with the platform or
+              service from which the subscription was purchased.
+              MailTime/RewardMe are not responsible for refunding or resolving
+              any issues related to third-party subscriptions.
+            </li>
+            <li className="my-3 list-decimal">
+              Changes to Terms and Conditions: RewardMe reserves the right to
+              modify or update these terms and conditions at any time. Any
+              changes will be communicated to you through appropriate channels.
+              Continued use of the subscription and RewardMe membership after
+              any modifications implies your acceptance of the updated terms and
+              conditions.
+            </li>
+          </ol>
+
+          <p className="my-8">
+            Tiers advancement is subject to the terms and conditions specified
+            in RewardMe. Members are advised to review and comply with these
+            terms and conditions to be eligible for tier progression. RewardMe
+            reserves the right to modify or update these terms and conditions as
+            necessary. By participating in the tier advancement process, members
+            agree to abide by the rules and guidelines set forth in the
+            RewardMe.
+          </p>
+
+          <p className="my-8">
             <b>
-              MailTime AI Unlimited - <br />
-              Monthly/Yearly Subscriptions
+              *To maintain optimal performance and fair usage across all
+              MailTime AI users, your usage of MailTime AI is subject to fair
+              usage restrictions. If you exceed the permitted usage, your access
+              to AI features may be reduced.
             </b>
-          </h2>
-
-          <p className="my-8">
-            Certain functionalities of MailTime require payment before you can
-            use them (&ldquo;Subscriptions&rdquo;). Subscriptions can be
-            purchased by paying an annual or monthly subscription fee.
-            Subscription fees are charged at the beginning of the subscription
-            and, such subscription renews automatically for an additional period
-            equal in length to the expiring subscription term until you cancel
-            it.
-          </p>
-          <p className="my-8">
-            We reserve the right to change the pricing structure for our
-            Subscriptions. When we do that, we tend to exempt existing
-            subscribers from those changes. If we need to change the prices for
-            existing subscribers, we will give at least 30 days notice and will
-            notify you via the email address used to create your MailTime
-            Account or by posting a notice about changes on our App and Website
-            themselves. Your continued use of the App after the price change
-            becomes effective constitutes your agreement to pay the changed
-            amount. MailTime offers two types of MailTime AI Unlimited
-            subscriptions: Monthly and Yearly. If you need help regarding the
-            subscription plans please contact us at{" "}
-            <a href="mailto:support@mailtime.com" className="underline">
-              support@mailtime.com
-            </a>
-            .
           </p>
 
-          <h2 className="my-8 underline underline-offset-2">
-            <b>Payments</b>
-          </h2>
           <p className="my-8">
-            MailTime provides you with the option to pay for the subscription
-            through in-app payments at App Store and Google Play.
+            <b>
+              Compliance and Termination: Members must adhere to the terms and
+              conditions of RewardMe and maintain eligibility for their
+              respective tier. Failure to comply may result in the loss of tier
+              benefits or even termination of membership.
+            </b>
           </p>
-          <p className="my-8">
-            If you purchase the subscription through the in-app purchase, then
-            the app market’s in-app purchase rules and policies will also apply.
-          </p>
-          <p className="my-8">
-            The subscription bought is only available for the linked email
-            account. We reserve the right to revise the subscription fees at any
-            time, subject to providing users with adequate notice of any fee
-            changes before they become effective. The revised fees will not
-            apply to your current subscription period, however, your continued
-            use after the effective date of such change will constitute your
-            agreement to pay the updated fees.
-          </p>
-          <p className="my-8">
-            PLEASE NOTE, if your local currency is different from the currency
-            in which the prices are quoted, your bank will apply the exchange
-            rate applicable per the date of purchase, which is beyond our
-            control. Also, your bank may apply an exchange commission or fee.
-          </p>
-          <p className="my-8">
-            PLEASE ALSO NOTE that the subscription fee is inclusive of
-            applicable value added tax (&ldquo;VAT&rdquo;) and/or other taxes
-            which are imposed under the relevant tax laws. The VAT and/or other
-            tax charge will depend on your location. When you get to the final
-            stage of the checkout, App Store/Play Store will show the tax
-            component of the subscription fee for your information.
-          </p>
-
-          <h2 className="my-8 underline underline-offset-2">
-            <b>Subscription Renewal and Cancellation</b>
-          </h2>
-          <p className="my-8">
-            The subscription will automatically renew for a subsequent term
-            unless you cancel it in App Store/Play Store. You may cancel your
-            subscription at any time. Upon cancellation, your subscription will
-            last until the expiration date.
-          </p>
-
-          <h2 className="my-8 underline underline-offset-2">
-            <b>Refunds</b>
-          </h2>
-          <p className="my-8">
-            All paid subscription fees are non-refundable unless otherwise
-            agreed with MailTime in writing. If you have any problems with the
-            app functioning, please contact our support team at{" "}
-            <a href="mailto:support@mailtime.com" className="underline">
-              support@mailtime.com
-            </a>
-            .
-          </p>
-          <p className="my-8">
-            For any purchases made through third-party app markets (Apple’s App
-            Store, Google Play, etc.), please contact their customer support.
-            Their terms, conditions and policies, and not ours, apply and we do
-            not handle returns or refund requests for purchases through those
-            third-party platform providers.
-          </p>
-          <p className="my-8"></p>
         </article>
       </div>
     </div>

@@ -114,33 +114,6 @@ const FaqList = [
     ),
   },
   {
-    title: "What is RewardMe?",
-    icon: "rewardme",
-    content: (
-      <>
-        <p>
-          <a
-            href="https://reward.me/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline underline-offset-4"
-          >
-            <b>RewardMe</b>
-          </a>{" "}
-          is an innovative reward app that automatically earns you rewards as
-          you spend at your favourite merchants. Simply bind your email account
-          and you will automatically get rewarded on eligible purchases in gift
-          cards, or cryptocurrency. The best part about RewardMe is that you get
-          to enjoy extra rewards on top of other reward programs you&apos;ve
-          already signed up for!
-        </p>
-        <p className="mt-[2.1rem]">
-          With RewardMe, Your Every Purchase Counts.
-        </p>
-      </>
-    ),
-  },
-  {
     title: "What is Measurable Data Token?",
     icon: "mdt",
     content: (
@@ -219,6 +192,100 @@ const FaqList = [
             )}
           </BrowserView>
         </NoSSR>
+      </>
+    ),
+  },
+  {
+    title: "What is RewardMe?",
+    icon: "rewardme",
+    content: (
+      <>
+        <p>
+          <a
+            href="https://reward.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4"
+          >
+            <b>RewardMe</b>
+          </a>{" "}
+          is an innovative reward app that automatically earns you rewards as
+          you spend at your favourite merchants. Simply bind your email account
+          and you will automatically get rewarded on eligible purchases in gift
+          cards, or cryptocurrency. The best part about RewardMe is that you get
+          to enjoy extra rewards on top of other reward programs you&apos;ve
+          already signed up for!
+        </p>
+        <p className="mt-[2.1rem]">
+          With RewardMe, Your Every Purchase Counts.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "What are the exclusive RewardMe privileges?",
+    icon: "rewardme",
+    content: (
+      <>
+        <p>
+          Membership in{" "}
+          <a
+            href="https://reward.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4"
+          >
+            <b>RewardMe</b>
+          </a>{" "}
+          offers a range of exclusive benefits to MailTime AI, tailored to each
+          tier level.
+        </p>
+        <p className="mt-[2.1rem]">
+          Lower-tier members enjoy the privilege of receiving daily MDTs to
+          power their usage of MailTime AI, as outlined in the table below.
+          Meanwhile, higher-tier members gain the advantage of unlimited access*
+          to MailTime AI, provided that they maintain their respective tier
+          status.
+        </p>
+        <p className="mt-[2.1rem]">
+          Progressing from the Newbie tier, individuals can advance to
+          &ldquo;Starter&rdquo; and &ldquo;Extra&rdquo; tiers by actively
+          engaging with the RewardMe app, which includes tasks such as daily
+          check-ins and referring friends.
+        </p>
+        <p className="mt-[2.1rem]">
+          To attain the prestigious Elite tier or beyond, members are required
+          to undertake additional activities, such as staking a specified
+          quantity of Measurable Data Tokens.
+        </p>
+        <Image
+          src="/static/img/faq/rewardme-privilege-list.png"
+          alt=""
+          width={343 * 3}
+          height={260 * 3}
+          className="my-8"
+        />
+        <p className="mt-[2.1rem]">
+          For more information, please download the RewardMe app, or visit the{" "}
+          <a
+            href="https://reward.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4"
+          >
+            <b>RewardMe website</b>
+          </a>
+          !
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "How do I claim my RewardMe membership exclusive privileges?",
+    icon: "rewardme",
+    content: (
+      <>
+        <p></p>
       </>
     ),
   },

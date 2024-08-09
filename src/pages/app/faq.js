@@ -143,7 +143,7 @@ const FaqList = [
         <p className="mt-[2.1rem]">
           <b>
             Upon activation of MailTime AI, users will receive an initial
-            allocation of 2 MDTs.
+            allocation of 100 MDTs.
           </b>{" "}
           When users exhaust their balance, they can continue their use either
           through purchasing MailTime AI Credits, or become a tiered member of

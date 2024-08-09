@@ -150,20 +150,14 @@ const TermsAndConditionsPage = () => {
             benefits related to MailTime AI.
           </p>
           <p className="my-8">
-            Lower-Tier Benefits: Members in lower tiers receive daily Measurable
-            Data Tokens (MDTs) to enhance their usage of MailTime AI. The
-            specific allocation is detailed below.
+            Lower-Tier Benefits: Members in lower tiers receive monthly
+            Measurable Data Tokens (MDTs) to enhance their usage of MailTime AI.
+            The specific allocation is detailed below.
           </p>
 
           <ol className="ml-12 list-outside">
-            <li className="my-3 list-decimal font-bold">
-              Newbie Tier - 2 MDTs, daily refresh, maximum 2 MDTs.
-            </li>
-            <li className="my-3 list-decimal font-bold">
-              Starter Tier - 4 MDTs, daily refresh, maximum 4 MDTs.
-            </li>
-            <li className="my-3 list-decimal font-bold">
-              Extra Tier - 6 MDTs, daily refresh, maximum 6 MDTs.
+            <li className="my-3 list-disc font-bold">
+              Newbie, Starter, Extra Tier - 100 MDTs, monthly refresh.
             </li>
           </ol>
 

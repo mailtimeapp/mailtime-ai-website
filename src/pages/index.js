@@ -89,7 +89,7 @@ const Home = () => {
               className={`relative mx-auto w-8/12 lg:mx-[3.1rem] lg:w-6/12 ${styles.mockup}`}
             >
               <Image
-                src="/static/img/mailtime-ai-on-phone.webp"
+                src="/static/img/mailtimeai-on-phone.webp"
                 alt="A image shows MailTime AI in an email chat on a phone."
                 className="mx-auto"
                 width={776}

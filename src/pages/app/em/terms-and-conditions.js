@@ -21,9 +21,9 @@ const TermsAndConditionsPage = () => {
             <b>
               It can not be withdrawn, redeemed, transferred, or used in any
               other use cases of the MDT at any point.
-              <br /> Any MDT balance in the user’s MailTime accounts can be
-              reclaimed by Measurable Foundation Limited and its affiliates, at
-              its discretion.
+              <br /> Any MDT balance in the user’s Email Messenger accounts can
+              be reclaimed by Measurable Foundation Limited and its affiliates,
+              at its discretion.
             </b>
           </p>
           <p className="my-8">
@@ -44,9 +44,9 @@ const TermsAndConditionsPage = () => {
             These <b>MailTime AI</b> Terms apply to your access and use of any
             MailTime AI feature(s) and, if applicable, your{" "}
             <b>MailTime AI Unlimited</b> Subscription. &ldquo;MailTime AI&rdquo;
-            refers to any feature or functionality provided by MailTime and
-            labeled as MailTime AI that utilises data models trained by machine
-            learning.
+            refers to any feature or functionality provided by Email Messenger
+            and labeled as MailTime AI that utilises data models trained by
+            machine learning.
           </p>
 
           <p className="my-8">
@@ -69,19 +69,19 @@ const TermsAndConditionsPage = () => {
           </p>
           <ol className="ml-12 list-outside">
             <li className="my-3 list-decimal">
-              MailTime reserves the right to change the pricing of its AI
+              Email Messenger reserves the right to change the pricing of its AI
               credits and subscription pricing at any time without prior notice
               to the user.
             </li>
             <li className="my-3 list-decimal">
               Any changes to pricing will be effective immediately upon being
-              posted on the MailTime website or otherwise communicated to the
-              user.
+              posted on the Email Messenger website or otherwise communicated to
+              the user.
             </li>
             <li className="my-3 list-decimal">
-              MailTime may offer promotional pricing or discounts from time to
-              time, and such promotions may have different terms and conditions
-              than those stated here.
+              Email Messenger may offer promotional pricing or discounts from
+              time to time, and such promotions may have different terms and
+              conditions than those stated here.
             </li>
             <li className="my-3 list-decimal">
               The user is responsible for paying all fees and charges associated
@@ -92,13 +92,14 @@ const TermsAndConditionsPage = () => {
               law.
             </li>
             <li className="my-3 list-decimal">
-              MailTime reserves the right to suspend or cancel a user&apos;s
-              account at any time for any reason, including but not limited to
-              non-payment of fees and charges.
+              Email Messenger reserves the right to suspend or cancel a
+              user&apos;s account at any time for any reason, including but not
+              limited to non-payment of fees and charges.
             </li>
             <li className="my-3 list-decimal">
-              MailTime may modify or discontinue its AI credits and subscription
-              services at any time without prior notice to the user.
+              Email Messenger may modify or discontinue its AI credits and
+              subscription services at any time without prior notice to the
+              user.
             </li>
             <li className="my-3 list-decimal">
               The user agrees to comply with all applicable laws and regulations
@@ -130,7 +131,7 @@ const TermsAndConditionsPage = () => {
               to promptly update such information as necessary.
             </li>
             <li className="my-3 list-decimal">
-              MailTime may use the user&apos;s personal information in
+              Email Messenger may use the user&apos;s personal information in
               accordance with its Privacy Policy, which is incorporated by
               reference into these terms and conditions.
             </li>
@@ -187,8 +188,8 @@ const TermsAndConditionsPage = () => {
             <li className="my-3 list-decimal">
               Refunds and Disputes: Refunds or disputes related to the
               subscription should be addressed directly with the platform or
-              service from which the subscription was purchased.
-              MailTime/RewardMe are not responsible for refunding or resolving
+              service from which the subscription was purchased. Email
+              Messenger/RewardMe are not responsible for refunding or resolving
               any issues related to third-party subscriptions.
             </li>
             <li className="my-3 list-decimal">

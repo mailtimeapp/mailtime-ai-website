@@ -43,7 +43,7 @@ const TermsAndConditionsPage = () => {
           <p className="my-8">
             These <b>MailTime AI</b> Terms apply to your access and use of any
             MailTime AI feature(s) and, if applicable, your{" "}
-            <b>MailTime Unlimited</b> Subscription. &ldquo;MailTime AI&rdquo;
+            <b>MailTime AI Unlimited</b> Subscription. &ldquo;MailTime AI&rdquo;
             refers to any feature or functionality provided by MailTime and
             labeled as MailTime AI that utilises data models trained by machine
             learning.

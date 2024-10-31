@@ -58,22 +58,12 @@ const Home = () => {
         <div className="mx-auto w-full pt-[10.7rem] lg:w-[70%] lg:pt-[12.2rem] 2xl:w-[100rem]">
           <section className="mb-[4.3rem] lg:mb-32">
             <div className="mx-auto w-10/12">
-              <div className="relative hidden h-auto w-full lg:block">
+              <div className="relative h-auto w-full">
                 <Image
-                  src="/static/img/hero-title.svg"
-                  alt="Early access starts... NOW. Priority Access to MailTime AI powered by Generative AI"
-                  width={1740}
-                  height={640}
-                  className="mx-auto"
-                  priority
-                />
-              </div>
-              <div className="relative block w-full lg:hidden">
-                <Image
-                  src="/static/img/hero-title-mobile.svg"
-                  alt="Early access starts... NOW. Priority Access to MailTime AI powered by Generative AI"
-                  width={612}
-                  height={398}
+                  src="/static/img/experience-mailtimeai-now.webp"
+                  alt="Experience MailTime AI Now"
+                  width={1352}
+                  height={588}
                   className="mx-auto"
                   priority
                 />

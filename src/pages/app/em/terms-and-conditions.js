@@ -9,12 +9,12 @@ const TermsAndConditionsPage = () => {
           <p className="my-8">
             The <b>MDT</b> provided during the priority access phase is designed
             to be restricted and managed in a centralised way.{" "}
-            <b>It is intended solely for use within the MailTime AI system.</b>{" "}
+            <b>It is intended solely for use within the Messenger AI system.</b>{" "}
             This provision does not constitute a financial investment, security,
             share, equity, or any form of financial or investment instrument.The
             tokens are explicitly for use within the confines of the{" "}
-            <b>MailTime AI</b> functionalities, as a means to enhance the user
-            experience and facilitate user participation within the MailTime AI
+            <b>Messenger AI</b> functionalities, as a means to enhance the user
+            experience and facilitate user participation within the Messenger AI
             system.
           </p>
           <p className="my-8">
@@ -28,44 +28,44 @@ const TermsAndConditionsPage = () => {
           </p>
           <p className="my-8">
             All users should conduct their own due diligence before signing up
-            for MailTime AI whitelisting and subsequently accepting the provided
-            MDT. By receiving the MDT, users agree to be bound by all the
-            restrictions outlined above. Users are solely responsible for
+            for Messenger AI whitelisting and subsequently accepting the
+            provided MDT. By receiving the MDT, users agree to be bound by all
+            the restrictions outlined above. Users are solely responsible for
             understanding and complying with all laws, rules, and regulations of
             their specific jurisdiction that may be applicable to them in
             connection with their acceptance and use of MDT.
           </p>
 
           <h2 className="my-8 underline underline-offset-2">
-            <b>MailTime AI Credits</b>
+            <b>Messenger AI Credits</b>
           </h2>
 
           <p className="my-8">
-            These <b>MailTime AI</b> Terms apply to your access and use of any
-            MailTime AI feature(s) and, if applicable, your{" "}
-            <b>MailTime AI Unlimited</b> Subscription. &ldquo;MailTime AI&rdquo;
-            refers to any feature or functionality provided by Email Messenger
-            and labeled as MailTime AI that utilises data models trained by
-            machine learning.
+            These <b>Messenger AI</b> Terms apply to your access and use of any
+            Messenger AI feature(s) and, if applicable, your{" "}
+            <b>Messenger AI Unlimited</b> Subscription. &ldquo;Messenger
+            AI&rdquo; refers to any feature or functionality provided by Email
+            Messenger and labeled as Messenger AI that utilises data models
+            trained by machine learning.
           </p>
 
           <p className="my-8">
-            The MailTime AI Credits are intended solely for use within the
-            MailTime AI system to enhance the user experience and facilitate
+            The Messenger AI Credits are intended solely for use within the
+            Messenger AI system to enhance the user experience and facilitate
             participation.
             <b>
-              To maintain optimal performance and fair usage across all MailTime
-              AI users, your usage of MailTime AI is subject to fair usage
-              restrictions. If you exceed the permitted usage, your access to AI
-              features may be reduced.
+              To maintain optimal performance and fair usage across all
+              Messenger AI users, your usage of Messenger AI is subject to fair
+              usage restrictions. If you exceed the permitted usage, your access
+              to AI features may be reduced.
             </b>{" "}
-            Please note that all in-app MailTime AI Credit purchases made
+            Please note that all in-app Messenger AI Credit purchases made
             through Apple/ Google payment systems are final and non-refundable.
           </p>
 
           <p className="mb-3 mt-8">
-            By using MailTime AI Credits and/or subscription services, you agree
-            to the following terms and conditions:
+            By using Messenger AI Credits and/or subscription services, you
+            agree to the following terms and conditions:
           </p>
           <ol className="ml-12 list-outside">
             <li className="my-3 list-decimal">
@@ -85,7 +85,7 @@ const TermsAndConditionsPage = () => {
             </li>
             <li className="my-3 list-decimal">
               The user is responsible for paying all fees and charges associated
-              with their use of MailTime AI credits and subscription services.
+              with their use of Messenger AI credits and subscription services.
             </li>
             <li className="my-3 list-decimal">
               All fees and charges are non-refundable, except as required by
@@ -103,10 +103,10 @@ const TermsAndConditionsPage = () => {
             </li>
             <li className="my-3 list-decimal">
               The user agrees to comply with all applicable laws and regulations
-              when using MailTime AI Credits and subscription services.
+              when using Messenger AI Credits and subscription services.
             </li>
             <li className="my-3 list-decimal">
-              All subscriptions purchased through MailTime AI are automatically
+              All subscriptions purchased through Messenger AI are automatically
               set to renew on a recurring basis unless the user chooses to
               unsubscribe or terminate the subscription. Cancellation of
               subscriptions must be initiated through the designated channels
@@ -118,7 +118,7 @@ const TermsAndConditionsPage = () => {
             </li>
             <li className="my-3 list-decimal">
               If a user chooses to purchase credits on RewardMe but later
-              decides to subscribe to a monthly or yearly MailTime AI unlimited
+              decides to subscribe to a monthly or yearly Messenger AI unlimited
               plan, the subscription will take precedence over the credit
               balance. The existing credits will not be consumed or deducted
               from the user&apos;s account until the subscription is canceled.
@@ -127,8 +127,8 @@ const TermsAndConditionsPage = () => {
             </li>
             <li className="my-3 list-decimal">
               The user agrees to provide accurate and complete information when
-              registering for MailTime AI Credits and subscription services, and
-              to promptly update such information as necessary.
+              registering for Messenger AI Credits and subscription services,
+              and to promptly update such information as necessary.
             </li>
             <li className="my-3 list-decimal">
               Email Messenger may use the user&apos;s personal information in
@@ -138,22 +138,22 @@ const TermsAndConditionsPage = () => {
           </ol>
           <p className="my-8">
             Please read these terms and conditions carefully before using
-            MailTime AI Credits and subscription services. By using these
+            Messenger AI Credits and subscription services. By using these
             services, you agree to be bound by these terms and conditions.
           </p>
 
           <h2 className="my-8 underline underline-offset-2">
-            <b>RewardMe Exclusive Privileges for MailTime AI</b>
+            <b>RewardMe Exclusive Privileges for Messenger AI</b>
           </h2>
 
           <p className="my-8">
             RewardMe offers different membership tiers, each with its own set of
-            benefits related to MailTime AI.
+            benefits related to Messenger AI.
           </p>
           <p className="my-8">
             Lower-Tier Benefits: Members in lower tiers receive monthly
-            Measurable Data Tokens (MDTs) to enhance their usage of MailTime AI.
-            The specific allocation is detailed below.
+            Measurable Data Tokens (MDTs) to enhance their usage of Messenger
+            AI. The specific allocation is detailed below.
           </p>
 
           <ol className="ml-12 list-outside">
@@ -164,16 +164,16 @@ const TermsAndConditionsPage = () => {
 
           <p className="my-8">
             Higher-Tier Benefits: Members in higher tiers enjoy unlimited
-            access* to MailTime AI, as long as they maintain their respective
+            access* to Messenger AI, as long as they maintain their respective
             tier status. <br />
             <b>This includes: Elite, Infinite and Infinite Privilege Tiers.</b>
           </p>
 
           <p className="my-8">
             For users who purchased a subscription and then claimed their
-            RewardMe Exclusive Privileges for MailTime AI (applicable for Elite,
-            Infinite and Infinite Privilege Tiers), you agree to the following
-            terms and conditions:
+            RewardMe Exclusive Privileges for Messenger AI (applicable for
+            Elite, Infinite and Infinite Privilege Tiers), you agree to the
+            following terms and conditions:
           </p>
 
           <ol className="ml-12 list-outside">
@@ -215,7 +215,7 @@ const TermsAndConditionsPage = () => {
           <p className="my-8">
             <b>
               *To maintain optimal performance and fair usage across all
-              MailTime AI users, your usage of MailTime AI is subject to fair
+              Messenger AI users, your usage of Messenger AI is subject to fair
               usage restrictions. If you exceed the permitted usage, your access
               to AI features may be reduced.
             </b>

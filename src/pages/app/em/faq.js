@@ -1,6 +1,6 @@
 import Image from "next/image";
-import FaqAccordion from "@/components/Faq/Accordion";
-import FaqAccordionItem from "@/components/Faq/AccordionItem";
+import FaqAccordion from "@/components/Faq/Em/Accordion";
+import FaqAccordionItem from "@/components/Faq/Em/AccordionItem";
 import { isAndroid, isIOS, MobileView, BrowserView } from "react-device-detect";
 import NoSSR from "@/components/Helper/NoSSR";
 
@@ -10,9 +10,9 @@ const IOSUnsubscribeUrl = "https://apps.apple.com/account/subscriptions";
 
 const FaqList = [
   {
-    title: "What is MailTime AI?",
-    icon: "mailtime_ai",
-    id: "what-is-mailtime-ai",
+    title: "What is Messenger AI?",
+    icon: "messenger_ai",
+    id: "what-is-messenger-ai",
     content: (
       <p>
         Developed by{" "}
@@ -24,29 +24,29 @@ const FaqList = [
         >
           <b>Measurable Data Tokens (MDT)</b>
         </a>
-        , MailTime AI is powered by a cutting-edge Generative AI language model,
-        providing unmatched speed and efficiency to email drafting. MailTime AI
-        utilizes AI technology to suggest relevant and accurate email replies,
-        making email management easier and faster.
+        , Messenger AI is powered by a cutting-edge Generative AI language
+        model, providing unmatched speed and efficiency to email drafting.
+        Messenger AI utilizes AI technology to suggest relevant and accurate
+        email replies, making email management easier and faster.
       </p>
     ),
   },
   {
-    title: "How does MailTime AI work?",
-    icon: "mailtime_ai",
-    id: "how-mailtime-ai-work",
+    title: "How does Messenger AI work?",
+    icon: "messenger_ai",
+    id: "how-messenger-ai-work",
     content: (
       <div className="grid gap-[2.4rem] pb-[0.8rem]">
         <div className="grid grid-cols-[2.4rem_auto] gap-[1.6rem]">
-          <div className="grid h-[2.4rem] w-[2.4rem] place-content-center items-center rounded-xl bg-[#334155] text-white">
+          <div className="grid h-[2.4rem] w-[2.4rem] place-content-center items-center rounded-xl bg-[#1926D6] text-white">
             1
           </div>
           <div>
-            Press on the MailTime AI icon on the bottom of the chat box.
+            Press on the Messenger AI icon on the bottom of the chat box.
           </div>
           <div className="col-span-2 grid place-content-center">
             <Image
-              src="/static/img/faq/mailtime-ai-step01.png"
+              src="/static/img/faq/messenger-ai-step01.png"
               alt=""
               width={654}
               height={200}
@@ -54,7 +54,7 @@ const FaqList = [
           </div>
         </div>
         <div className="grid grid-cols-[2.4rem_auto] gap-[1.6rem]">
-          <div className="grid h-[2.4rem] w-[2.4rem] place-content-center items-center rounded-xl bg-[#334155] text-white">
+          <div className="grid h-[2.4rem] w-[2.4rem] place-content-center items-center rounded-xl bg-[#1926D6] text-white">
             2
           </div>
           <div>
@@ -63,7 +63,7 @@ const FaqList = [
           </div>
           <div className="col-span-2 grid place-content-center">
             <Image
-              src="/static/img/faq/mailtime-ai-step02.png"
+              src="/static/img/faq/messenger-ai-step02.png"
               alt=""
               width={654}
               height={328}
@@ -71,13 +71,13 @@ const FaqList = [
           </div>
         </div>
         <div className="grid grid-cols-[2.4rem_auto] gap-[1.6rem]">
-          <div className="grid h-[2.4rem] w-[2.4rem] place-content-center items-center rounded-xl bg-[#334155] text-white">
+          <div className="grid h-[2.4rem] w-[2.4rem] place-content-center items-center rounded-xl bg-[#1926D6] text-white">
             3
           </div>
           <div>You can choose to further enhance your message!</div>
           <div className="col-span-2 grid place-content-center">
             <Image
-              src="/static/img/faq/mailtime-ai-step03.png"
+              src="/static/img/faq/messenger-ai-step03.png"
               alt=""
               width={654}
               height={408}
@@ -88,18 +88,18 @@ const FaqList = [
     ),
   },
   {
-    title: "What is MailTime AI Unlimited?",
-    icon: "mailtime_ai_unlimited",
-    id: "what-is-mailtime-ai-unlimited",
+    title: "What is Messenger AI Unlimited?",
+    icon: "messenger_ai_unlimited",
+    id: "what-is-messenger-ai-unlimited",
     content: (
       <>
         <p>
-          <b>MailTime AI Unlimited</b> is a subscription plan that gives Email
+          <b>Messenger AI Unlimited</b> is a subscription plan that gives Email
           Messenger users unlimited access to Email Messenger&apos;s advanced AI
           functionalities.
         </p>
         <p className="mt-[2.1rem]">
-          There are two options available for MailTime AI Unlimited: a monthly
+          There are two options available for Messenger AI Unlimited: a monthly
           plan and a yearly plan. With the monthly plan, users can pay on a
           month-by-month basis, allowing them to easily manage their
           subscription and budget. The yearly plan, on the other hand, is
@@ -132,21 +132,21 @@ const FaqList = [
           >
             <b>Measurable Data Tokens (MDT)</b>
           </a>{" "}
-          provided are explicitly for use within the confines of the MailTime AI
-          functionalities, as a means to enhance the user experience and
-          facilitate user participation within the MailTime AI system. It is
+          provided are explicitly for use within the confines of the Messenger
+          AI functionalities, as a means to enhance the user experience and
+          facilitate user participation within the Messenger AI system. It is
           designed to be restricted and managed in a centralized way, solely for
-          use within the MailTime AI system. This provision does not constitute
+          use within the Messenger AI system. This provision does not constitute
           a financial investment, security, share, equity, or any form of
           financial or investment instrument.
         </p>
         <p className="mt-[2.1rem]">
           <b>
-            Upon activation of MailTime AI, users will receive an initial
+            Upon activation of Messenger AI, users will receive an initial
             allocation of 100 MDTs.
           </b>{" "}
           When users exhaust their balance, they can continue their use either
-          through purchasing MailTime AI Credits, or become a tiered member of
+          through purchasing Messenger AI Credits, or become a tiered member of
           our RewardMe app (see FAQ “
           <a
             href="#rewardme-privileges"
@@ -160,8 +160,8 @@ const FaqList = [
     ),
   },
   {
-    title: "How to unsubscribe from MailTime AI Unlimited?",
-    icon: "mailtime_ai_unlimited",
+    title: "How to unsubscribe from Messenger AI Unlimited?",
+    icon: "messenger_ai_unlimited",
     id: "unsubscribe",
     content: (
       <>
@@ -175,7 +175,7 @@ const FaqList = [
         <p className="mt-[2.1rem]">
           It&apos;s important to note that if you do not cancel your
           subscription before the next payment date, you will be automatically
-          enrolled as a recurring subscriber to MailTime AI Unlimited
+          enrolled as a recurring subscriber to Messenger AI Unlimited
           (Monthly/Yearly), depending on the plan you initially selected. In
           this case, the payment method you provided will be charged
           automatically for the subscription.
@@ -191,7 +191,7 @@ const FaqList = [
                 href={isAndroid ? AndroidUnsubscribeUrl : IOSUnsubscribeUrl}
                 className="mx-auto mt-[2.1rem] block w-max rounded-lg bg-[#FFEDED] p-2 font-semibold text-[#FF5656] active:bg-[#ffdbdb]"
               >
-                Unsubscribe MailTime AI Unlimited
+                Unsubscribe Messenger AI Unlimited
               </a>
             )}
           </MobileView>
@@ -250,14 +250,14 @@ const FaqList = [
           >
             <b>RewardMe</b>
           </a>{" "}
-          offers a range of exclusive benefits to MailTime AI, tailored to each
+          offers a range of exclusive benefits to Messenger AI, tailored to each
           tier level.
         </p>
         <p className="mt-[2.1rem]">
           Lower-tier members enjoy the privilege of receiving daily MDTs to
-          power their usage of MailTime AI, as outlined in the table below.
+          power their usage of Messenger AI, as outlined in the table below.
           Meanwhile, higher-tier members gain the advantage of unlimited access*
-          to MailTime AI, provided that they maintain their respective tier
+          to Messenger AI, provided that they maintain their respective tier
           status.
         </p>
         <p className="mt-[2.1rem]">
@@ -272,7 +272,7 @@ const FaqList = [
           quantity of Measurable Data Tokens.
         </p>
         <Image
-          src="/static/img/faq/rewardme-privilege-list.png"
+          src="/static/img/faq/rewardme-privilege-list-em.png"
           alt=""
           width={343 * 3}
           height={260 * 3}
@@ -300,7 +300,7 @@ const FaqList = [
     content: (
       <>
         <p>
-          To claim you RewardMe membership exclusive MailTime AI privileges is
+          To claim you RewardMe membership exclusive Messenger AI privileges is
           simple, just follow the steps below!
         </p>
         <ol className="ml-12 mt-[2.1rem] list-outside">
@@ -312,13 +312,13 @@ const FaqList = [
             Add this email address to Email Messenger.
           </li>
           <li className="my-3 list-decimal">
-            Click into the MailTime AI Wallet page.
+            Click into the Messenger AI Wallet page.
           </li>
           <li className="my-3 list-decimal">
             Touch the “Measurable Data Tokens” card.
           </li>
           <Image
-            src="/static/img/faq/click-mdt-card.png"
+            src="/static/img/faq/click-mdt-card-em.png"
             alt=""
             width={1057}
             height={984}
@@ -328,7 +328,7 @@ const FaqList = [
             Click the “Claim Your Privilege” button on the bottom.
           </li>
           <Image
-            src="/static/img/faq/claim-your-rewardme-privilege.png"
+            src="/static/img/faq/claim-your-rewardme-privilege-em.png"
             alt=""
             width={343 * 3}
             height={324 * 3}

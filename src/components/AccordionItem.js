@@ -28,7 +28,7 @@ function AccordionItem({ data, page }) {
   if (page == "faq") {
     return (
       <li className="grid bg-transparent px-[2rem]">
-        <div className={`my-[1rem] flex styles.textWrap`}>
+        <div className={`my-[1rem] flex ${styles.textWrap}`}>
           <div>
             <div
               className={`${styles.extend_btn}  ${
@@ -45,17 +45,17 @@ function AccordionItem({ data, page }) {
           </div>
           <div
             className={`${styles.from_them} 
-                           lg:px-[2rem] lg:py-[1.5rem] lg:ml-[1rem]
-                           px-[1rem] py-[1rem] ml-[1rem]
+                           ml-[1rem] px-[1rem] py-[1rem]
+                           lg:ml-[1rem] lg:px-[2rem] lg:py-[1.5rem]
                            `}
           >
             <button onClick={btnOnClick}>
               <span
-                className="font-inter w-full
-                               lg:text-[2.1rem] lg:leading-[2.8rem]
-                               text-[1.6rem] leading-[2.6rem]
-                               flex align-start px-[1rem]
-                               text-left"
+                className="align-start flex
+                               w-full px-[1rem]
+                               text-left font-inter
+                               text-[1.6rem] leading-[2.6rem] lg:text-[2.1rem]
+                               lg:leading-[2.8rem]"
               >
                 {data.question}
               </span>
@@ -63,20 +63,20 @@ function AccordionItem({ data, page }) {
           </div>
         </div>
         <div
-          className="my-[1rem] flex w-full overflow-hidden justify-end
-                        transition-height duration-500 ease-in-out"
+          className="transition-height my-[1rem] flex w-full justify-end
+                        overflow-hidden duration-500 ease-in-out"
           style={{ height }}
         >
           <div
             ref={contentRef}
             className={`${styles.from_me}
-                          flex flex-wrap max-w-fit mr-[1rem]`}
+                          mr-[1rem] flex max-w-fit flex-wrap`}
           >
             <span
-              className="font-inter text-white
-                               lg:text-[2.1rem] lg:leading-[2.8rem] 
-                               text-[1.6rem] leading-[2.6rem] 
-                               px-[2rem] py-[1.5rem]
+              className="px-[2rem] py-[1.5rem]
+                               font-inter text-[1.6rem] 
+                               leading-[2.6rem] text-white 
+                               lg:text-[2.1rem] lg:leading-[2.8rem]
                               "
             >
               {data.answer}
@@ -128,7 +128,7 @@ function AccordionItem({ data, page }) {
         >
           <div className={`w-max px-[.5rem] py-[.5rem]`}>
             <button>
-              <span className="font-['Inter'] font-[300] text-white text-[1.6rem]">
+              <span className="font-['Inter'] text-[1.6rem] font-[300] text-white">
                 {data.question}
               </span>
             </button>
@@ -149,15 +149,15 @@ function AccordionItem({ data, page }) {
           </div>
         </div>
         <div
-          className="flex w-full overflow-hidden
-                        transition-height duration-500 ease-in-out"
+          className="transition-height flex w-full
+                        overflow-hidden duration-500 ease-in-out"
           style={{ height }}
         >
           <div
             ref={contentRef}
-            className={`flex flex-wrap max-w-fit mr-[1rem]`}
+            className={`mr-[1rem] flex max-w-fit flex-wrap`}
           >
-            <span className="font-['Inter'] font-[300] text-white text-[1.6rem]">
+            <span className="font-['Inter'] text-[1.6rem] font-[300] text-white">
               {data.answer}
             </span>
           </div>

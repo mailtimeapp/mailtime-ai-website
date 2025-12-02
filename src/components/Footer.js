@@ -206,7 +206,7 @@ const Footer = () => {
                   className="font-inter text-[1.6rem] 
                                   font-normal text-footer-grey lg:text-[1.8rem]"
                 >
-                  66 Shanghai St, Yau Ma Tei, Kowloon, Hong Kong
+                  28 Wellington Street, Central, Hong Kong
                 </span>
               </div>
             </div>
